@@ -6,44 +6,91 @@
 }
 
 :root {
-  --footer-bg: #000;
+  --footer-bg: #9ba4b5;
+  --navbar-bg: #394867;
+  --category: #9ba4b5;
 }
 
 html, body {
-  background: red;
+  background: #f1f6f9;
   font-family: 'Roboto', sans-serif;
 }
 
-header {
-  text-align: center;
+/* -------------------------------- */
+/* ----- Custom Navigationbar ----- */
+/* -------------------------------- */
+.logo {
+  width: 100px;
+}
+
+.category {
+  background: var(--category);
+  color: #fff;
   padding: 20px;
-  background-color: #f1f1f1; /* Változtasd meg az igényeidnek megfelelően */
 }
 
-.header-icons {
+nav {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
+  justify-content: space-between;
 }
 
-.header-icons img {
-  margin-right: 10px;
+.custom-navbar {
+  background: var(--navbar-bg);
+  color: #fff;
+  padding: 20px;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.custom-search input[type=text]{
+  font-size: 1rem;
+  width: 500px;
+  height: 25px;
+  border-radius: 25px;
+  padding: 5px 15px;
+  border: none;
 }
 
-nav li {
-  display: inline;
-  margin-right: 15px;
+.custom-search{
+  text-align: center;
+}
+   
+.custom-search button{
+  background-color: #0074D9;
+  color: #fff;
+  line-height: 2em;
+  padding: 5px 15px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-nav a {
-  text-decoration: none;
-  color: #333; /* Változtasd meg az igényeidnek megfelelően */
+.custom-search button{
+  background-color: #0074D9;
+  color: #fff;
+  line-height: 2em;
+  padding: 5px 15px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+} 
+
+.loginBtn {
+  background: #0074D9;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  transition: .5s;
 }
 
-/* Szükség esetén további stílusokat adhatsz hozzá a designhoz */
+.loginBtn:hover {
+  background: red;
+  cursor: pointer;
+}
