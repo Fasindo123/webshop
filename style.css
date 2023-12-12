@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1; /* Változtasd meg az igényeidnek megfelelően */
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-icons img {
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Változtasd meg az igényeidnek megfelelően */
+}
+
+/* Szükség esetén további stílusokat adhatsz hozzá a designhoz */
