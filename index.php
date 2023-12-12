@@ -1,9 +1,9 @@
 <!-- itt vannak .html-ek, de még nem kell javítani -->
 <!DOCTYPE html>
 <html lang="hu">
-<?php require_once('head.php'); ?>
+<?php require_once('components/head.php'); ?>
 <body>
-      <?php require_once('header.php'); ?>
+      <?php require_once('components/header.php'); ?>
       <main class="main">
         <section class="section banner-mode-4 bg-900">
           <div class="banner-homepage4">
