@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/535ee732fe.js" crossorigin="anonymous"></script>
 <footer class="footer">
     <div class="container">
         <div class="row">
