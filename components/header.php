@@ -5,6 +5,8 @@
       <input type="text" placeholder="Keresés..." name="search" />
       <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
+    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href=""><i class="fa-solid fa-heart"></i></a>
     <button class="loginBtn btnLogin-popup">Belépés <i class="fa-solid fa-right-to-bracket"></i></button>
   </nav>
 

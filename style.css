@@ -24,6 +24,9 @@ html, body {
   color: var(--blue);
 }
 
+a{
+  color: #fff;
+}
 /* ------------------ */
 /* Back to Top Button */
 /* ------------------ */
@@ -177,7 +180,7 @@ ul{
 .footer{
 	background-color: var(--footer-bg);
   color: #fff;
-  padding: 60px 0 30px;
+  padding: 60px 50px 30px;
 }
 
 .footer-col{
