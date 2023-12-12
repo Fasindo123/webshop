@@ -440,3 +440,8 @@ ul{
 .login-register p a:hover {
   text-decoration: underline;
 }
+
+.kapcsolat {
+  right: 30px;
+  text-decoration: none;
+}
