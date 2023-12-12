@@ -18,7 +18,9 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* ------------------ */
 /* Back to Top Button */
+/* ------------------ */
 #backToTopBtn {
   display: none;
   position: fixed;
@@ -266,9 +268,8 @@ ul{
 
 .wrapper {
   z-index: 1;
-  position: fixed;
-  top: 25%;
-  left: 40%;
+  position: absolute;
+  left: 50%;
   width: 400px;
   height: 440px;
   background: #fff;
@@ -293,8 +294,8 @@ ul{
 }
 
 .wrapper .form-box {
-  width: 100%;
-  padding: 40px;
+  width: auto;
+  padding: 0;
 }
 
 .wrapper .form-box.login {
@@ -324,7 +325,7 @@ ul{
   right: 0;
   width: 45px;
   height: 45px;
-  background: var(--blue);
+  background: red;
   font-size: 2em;
   color: #fff;
   display: flex;
