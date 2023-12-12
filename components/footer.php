@@ -15,11 +15,11 @@
             <h4><i class="fa-solid fa-envelope"></i> Kapcsolatfelvétel</h4>
             <ul>
             <li><a href="contact.php">Kapcsolat <i class="fa-solid fa-share-from-square"></i></a></li>
-            <li><i class="fa-solid fa-location-dot"></i> Cím: 7400 Kaposvár, <br>
-                Damjanich utca 17.</li>
-            <li><i class="fa-solid fa-phone"></i> Telefon: (+36) 30 092 2911</li>
-            <li><i class="fa-solid fa-envelope"></i> E-mail: levike.pinter@gmail.com</li>
-            <li><i class="fa-solid fa-clock"></i> Nyitva: Hétfő - Péntek<br>8:00 - 16:00</li>
+            <li><i class="fa-solid fa-location-dot"></i> 7255 Nagyberki, <br>
+                Széchenyi utca 1.</li>
+            <li><i class="fa-solid fa-phone"></i> (+36) 30 092 2911</li>
+            <li><i class="fa-solid fa-envelope"></i> levike.pinter@gmail.com</li>
+            <li><i class="fa-solid fa-clock"></i> Hétfő - Péntek<br>8:00 - 16:00</li>
             </ul>
         </div>
         <div class="footer-col">

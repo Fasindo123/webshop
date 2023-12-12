@@ -6,7 +6,7 @@
 }
 
 :root {
-  --footer-bg: #9ba4b5;
+  --footer-bg: #394867;
   --navbar-bg: #394867;
   --category: #9ba4b5;
 }
@@ -142,8 +142,6 @@ ul{
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
 }
