@@ -12,10 +12,10 @@
 
 <nav class="category">
   <ul>
-    <li>asd</li>
-    <li>asd</li>
-    <li>asd</li>
-    <li>asd</li>
-    <li>asd</li>
+    <li><a href="#">asdadasda</a></li>
+    <li><a href="#">asdadasda</a></li>
+    <li><a href="#">asdadasda</a></li>
+    <li><a href="#">asdadasda</a></li>
+    <li><a href="#">asdadasda</a></li>
   </ul>
 </nav>
