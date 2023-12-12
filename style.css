@@ -6,6 +6,54 @@
 }
 
 :root {
+  --footer-bg: #000;
+}
+
+html, body {
+  background: red;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1; /* Változtasd meg az igényeidnek megfelelően */
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-icons img {
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Változtasd meg az igényeidnek megfelelően */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
   --footer-bg: #9ba4b5;
   --navbar-bg: #394867;
   --category: #9ba4b5;
