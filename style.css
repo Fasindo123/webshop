@@ -9,11 +9,44 @@
   --footer-bg: #394867;
   --navbar-bg: #394867;
   --category: #9ba4b5;
+  --login-color: #000;
+  --blue: #0074D9;
 }
 
 html, body {
   background: #f1f6f9;
   font-family: 'Roboto', sans-serif;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: red;
+}
+
+#myBtn:hover {
+  background-color: red;
+}
+
+#myBtn.active {
+  background-color: red;
+  transform: scale(1.1);
 }
 
 /* -------------------------------- */
@@ -138,8 +171,9 @@ ul{
 }
 
 .footer-col h4{
+  z-index: 0;
 	font-size: 18px;
-	color: #ffffff;
+	color: #fff;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
@@ -147,6 +181,7 @@ ul{
 }
 
 .footer-col h4::before{
+  z-index: 0;
 	content: '';
 	position: absolute;
 	left:0;
@@ -164,14 +199,14 @@ ul{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 	display: block;
 	transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color: #fff;
 	padding-left: 8px;
 }
 
@@ -184,13 +219,13 @@ ul{
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
-	color: #ffffff;
+	color: #fff;
 	transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover{
 	color: #24262b;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 /*responsive*/
@@ -204,4 +239,203 @@ ul{
   .footer-col{
     width: 100%;
 }
+}
+
+/* ------------------------ */
+/* ----- Login Design ----- */
+/* ------------------------ */
+/* .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+}
+
+.btnLogin-popup:hover {
+  background: #fff;
+  color: var(--bg);
+} */
+
+.wrapper {
+  z-index: 1;
+  position: fixed;
+  top: 25%;
+  left: 40%;
+  width: 400px;
+  height: 440px;
+  background: #fff;
+  border: 3px solid var(--blue);
+  border-radius: 20px;
+  box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform .5s ease, height .2s ease;
+}
+
+
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+.wrapper.active {
+  height: 520px;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.wrapper .form-box.login {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: var(--blue);
+  font-size: 2em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.form-box h2 {
+  font-weight: 900;
+  font-size: 2em;
+  color: 162938;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid var(--login-color);
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: var(--login-color);
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: var(--login-color);
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: var(--login-color);
+  line-height: 57px;
+}
+
+.remember-forgot {
+  font-size:  .9em;
+  color: var(--login-color);
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  accent-color: var(--login-color);
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: var(--login-color);
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  height: 45px;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.login-register {
+  font-size: .9em;
+  color: var(--login-color);
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+  color: var(--login-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
 }

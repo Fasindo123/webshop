@@ -7,7 +7,7 @@
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
 
-        <button class="loginBtn">Belépés <i class="fa-solid fa-right-to-bracket"></i></button>
+        <button class="loginBtn btnLogin-popup">Belépés <i class="fa-solid fa-right-to-bracket"></i></button>
 </nav>
 
 <nav class="category">
