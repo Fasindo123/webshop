@@ -3,63 +3,52 @@
     <title>Kapcsolat - TechTrendStore</title>
 <?php require_once('components/head.php'); ?>
 <body>
-      <?php require_once('components/header.php'); ?>
-      <?php require_once('components/login.php'); ?>
-      <div class="background">
-  <div class="container">
-    <div class="screen">
-      <div class="screen-header">
-        <div class="screen-header-left">
-          <div class="screen-header-button close"></div>
-          <div class="screen-header-button maximize"></div>
-          <div class="screen-header-button minimize"></div>
-        </div>
-        <div class="screen-header-right">
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-        </div>
-      </div>
-      <div class="screen-body">
-        <div class="screen-body-item left">
-          <div class="app-title">
-            <span>CONTACT</span>
-            <span>US</span>
+  <?php require_once('components/header.php'); ?>
+  <?php require_once('components/login.php'); ?>
+      <br><br><br><br><br><br>
+
+  <div class="background">
+    <div class="contact-container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
           </div>
-          <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+          <div class="screen-header-right">
+          </div>
         </div>
-        <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="Név">
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>Kapcsolat</span>
             </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="E-mail">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="Telefonszám">
-            </div>
-            <div class="app-form-group message">
-              <input class="app-form-control" placeholder="Üzenet">
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
+            <div class="app-contact">Kapcsolat telefonszám: <br> 06 30 092 2911</div>
+            <div class="app-contact">Kapcsolat e-mail: <br> levike.pinter@gmail.com</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="Név" id="nev">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="E-mail" id="email">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="Telefonszám" id="telefonszam">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="Üzenet">
+              </div>
+              <div>
+                <button class="loginBtn">Küldés</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
-</div>
+<br><br><br>
 
-      <button id="backToTopBtn" onclick="scrollToTop()">
-        <i class="fa-solid fa-chevron-up"></i>
-      </button>
-
-    <script src="script.js"></script>
-    <?php require_once("components/footer.php"); ?>
-  </div>
-
+    <?php require_once("components/scripts.php"); ?>
+    <?php require_once('components/footer.php'); ?>
   </body>
 </html>
