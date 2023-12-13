@@ -1,6 +1,6 @@
 <div class="nav-fixed">
   <nav class="custom-navbar">
-  <a href="index.php"><img src="imgs/logo.png" alt="" title="" class="logo"></a>
+  <a href="index.php"><img src="imgs/logo.png" alt="logo" title="" class="logo"></a>
     <form action="#" class="custom-search">
       <input type="text" placeholder="Keresés..." name="search" />
       <button><i class="fa-solid fa-magnifying-glass"></i></button>

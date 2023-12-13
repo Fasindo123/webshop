@@ -29,7 +29,7 @@
                     <li><a href="#">Adatvédelmi Nyilatkozat</a></li>
                 </ul> <br>
             <h4><i class="fa-solid fa-credit-card"></i> Fizetési módok</h4>
-            <img class="ms-img ms-img--fluid" src="//assets.mmsrg.com/isr/166325/c1/-/ms-cms-mmhu-l16446034/feecms_x_x_x" srcset="//assets.mmsrg.com/isr/166325/c1/-/ms-cms-mmhu-l16446034/feecms_x_x_x 1x">
+            <img class="ms-img ms-img--fluid" src="//assets.mmsrg.com/isr/166325/c1/-/ms-cms-mmhu-l16446034/feecms_x_x_x" srcset="//assets.mmsrg.com/isr/166325/c1/-/ms-cms-mmhu-l16446034/feecms_x_x_x 1x" alt="Fizetési módok">
         </div>
         <div class="footer-col">
             <h4><i class="fa-solid fa-hashtag"></i> Közösségi Média</h4>

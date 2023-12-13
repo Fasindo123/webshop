@@ -1,4 +1,3 @@
-<!-- itt vannak .html-ek, de még nem kell javítani -->
 <!DOCTYPE html>
 <html lang="hu">
 <?php require_once('components/head.php'); ?>
