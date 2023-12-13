@@ -6,13 +6,7 @@
   <?php require_once('components/header.php'); ?>
     <div class="background">
       <div class="container">
-        <div class="screen">
-          <div class="screen-header">
-            <div class="screen-header-left">
-            </div>
-            <div class="screen-header-right">
-            </div>
-          </div>
+          
             <div class="screen-body">
               <div class="screen-body-item left">
                 <div class="app-title">
@@ -41,7 +35,6 @@
                 </div>
               </div>
             </div>
-        </div>
       </div>
     </div>
 

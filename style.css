@@ -264,7 +264,6 @@ ul{
 
 .screen {
   position: relative;
-  background: #3e3e3e;
   border-radius: 15px;
 }
 
@@ -364,7 +363,6 @@ ul{
   margin-top: 50px;
   margin-left: 0px;
   font-size: 15x;
-  color: #fff;
 }
 
 .app-form-group {
