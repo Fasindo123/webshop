@@ -250,80 +250,20 @@ ul{
   font-weight: 900;
 }
 
-/* Contact */
+/* ------------------- */
+/* ----- Contact ----- */
+/* ------------------- */
 .background {
-  display: flex;
-  min-height: 100vh;
+  margin-top: 100px;
+  height: 100%;
+  background: #f1f6f9;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
-}
-
-.screen {
-  position: relative;
-  border-radius: 15px;
-}
-
-.screen:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-  z-index: -1;
-}
-
-.screen-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  background: #4d4d4f;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.screen-header-left {
-  margin-right: auto;
-}
-
-.screen-header-button {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 3px;
-  border-radius: 8px;
-  background: white;
-}
-
-.screen-header-button.close {
-  background: #ed1c6f;
-}
-
-.screen-header-button.maximize {
-  background: #e8e925;
-}
-
-.screen-header-button.minimize {
-  background: #74c54f;
-}
-
-.screen-header-right {
-  display: flex;
-}
-
-.screen-header-ellipsis {
-  width: 3px;
-  height: 3px;
-  margin-left: 2px;
-  border-radius: 8px;
-  background: #999;
 }
 
 .screen-body {
@@ -362,7 +302,12 @@ ul{
 .app-contact {
   margin-top: 50px;
   margin-left: 0px;
-  font-size: 15x;
+  font-size: 15px;
+}
+
+.app-contact a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .app-form-group {
@@ -373,11 +318,6 @@ ul{
   margin-top: 40px;
 }
 
-.app-form-group.buttons {
-  margin-bottom: 0;
-  text-align: right;
-}
-
 .app-form-control {
   width: 100%;
   padding: 10px 0;
@@ -385,7 +325,6 @@ ul{
   border: none;
   border-bottom: 1px solid #666;
   color: #ddd;
-  font-size: 14px;
   outline: none;
   transition: border-color .2s;
 }
@@ -398,75 +337,45 @@ ul{
   border-bottom-color: #ddd;
 }
 
-.app-form-button {
-  background: none;
-  border: none;
-  color: #0074D9;
-  font-size: 14px;
-  cursor: pointer;
-  outline: none;
-}
-
-.app-form-button:hover {
-  color: #b9134f;
-}
-
-.credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  color: #ffa4bd;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.credits-link {
-  display: flex;
-  align-items: center;
+.kuldes {
+  background-color: #0074D9;
   color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.dribbble {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
+  border: none;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 520px) {
   .screen-body {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .screen-body-item.left {
-    margin-bottom: 30px;
+      margin-bottom: 30px;
   }
 
   .app-title {
-    flex-direction: row;
+      flex-direction: row;
   }
 
   .app-title span {
-    margin-right: 12px;
+      margin-right: 12px;
   }
 
   .app-title:after {
-    display: none;
+      display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
   .screen-body {
-    padding: 40px;
+      padding: 40px;
   }
 
   .screen-body-item {
-    padding: 0;
+      padding: 0;
   }
 }
+
 
 /* ------------------- */
 /* ----- Product ----- */
