@@ -251,12 +251,6 @@ ul{
 }
 
 /* Contact */
-body, button, input {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-}
-
 .background {
   display: flex;
   min-height: 100vh;
@@ -394,7 +388,6 @@ body, button, input {
   border-bottom: 1px solid #666;
   color: #ddd;
   font-size: 14px;
-  text-transform: uppercase;
   outline: none;
   transition: border-color .2s;
 }
