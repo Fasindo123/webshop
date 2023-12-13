@@ -340,7 +340,8 @@ ul{
   background-color: #0074D9;
   color: #fff;
   border: none;
-  border-radius: 2px;
+  padding: 10px;
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 520px) {
