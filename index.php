@@ -8,11 +8,7 @@
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-      <button id="backToTopBtn" onclick="scrollToTop()">
-        <i class="fa-solid fa-chevron-up"></i>
-      </button>
-
-      <script src="script.js"></script>
+  <?php require_once("components/scripts.php"); ?>
   <?php require_once("components/footer.php"); ?>
   </div>
 
