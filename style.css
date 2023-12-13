@@ -259,17 +259,11 @@ ul{
 /* ------------------- */
 /* ----- Contact ----- */
 /* ------------------- */
-.background {
-  margin-top: 100px;
-  height: 100%;
-  background: #f1f6f9;
-  font-family: 'Roboto', sans-serif;
-}
+
 
 .container {
   flex: 0 1 700px;
-  margin: auto;
-  padding: 10px;
+  margin: 200px;
 }
 
 .screen-body {

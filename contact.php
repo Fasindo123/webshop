@@ -5,10 +5,9 @@
 <body>
   <?php require_once('components/header.php'); ?>
 
-  <br><br><br><br><br><br><br><br><br><br>
-    <div class="background">
-      <div class="container">
-            <div class="screen-body">
+  <br><br><br>
+
+            <div class="screen-body container">
               <div class="screen-body-item left">
                 <div class="app-title">
                   <span>Kapcsolat</span>
@@ -36,8 +35,6 @@
                 </div>
               </div>
             </div>
-      </div>
-    </div>
 
   <?php require_once('components/footer.php'); ?>
 </body>
