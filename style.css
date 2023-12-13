@@ -24,7 +24,7 @@ html, body {
   color: var(--blue);
 }
 
-a{
+a {
   color: #fff;
 }
 /* ------------------- */
@@ -74,6 +74,7 @@ a{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99;
 }
 
 .category {
@@ -113,7 +114,7 @@ a{
 .custom-search input[type=text]{
   font-size: 1rem;
   width: 900px;
-  height: 25px;
+  height: 32px;
   border-radius: 25px;
   padding: 5px 15px;
   border: none;
@@ -408,17 +409,56 @@ ul{
 }
 
 .productBtn {
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin-right: 15px;
   float: right;
   border: none;
   padding: 5px;
-  border-radius: 10px;
-  background: var(--blue);
-  color: #fff;
+  background: none;
 } 
 
+.productBtn i {
+  color: var(--blue);
+}
 
+.slider-container {
+  max-width: 600px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slider-button {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background: var(--blue);
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px; /* Ezt az értéket állítsd be a főképének szélességére */
+  margin-top: 10px;
+}
+
+.thumbnail {
+  max-width: 60px; /* A maximális szélességet állítsd be, amit megfelelőnek találsz */
+  height: auto;
+  cursor: pointer;
+}
 
 /* ------------------------- */
 /* ----- Shopping Cart ----- */
