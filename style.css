@@ -11,6 +11,13 @@
   --category: #9ba4b5;
   --login-color: #000;
   --blue: #0074D9;
+
+  /* Checkout */
+  --color-background: #fae3ea;
+  --color-primary: #0074D9;
+  --font-family-base: Poppin, sans-serif;
+  --font-size-h1: 1.25rem;
+  --font-size-h2: 1rem;
 }
 
 html, body {
@@ -27,6 +34,7 @@ html, body {
 a {
   color: #fff;
 }
+
 /* ------------------- */
 /* Back to Top Button */
 /* ------------------ */
@@ -150,12 +158,7 @@ a {
 /* ------------------------- */
 .footer-container{
 	max-width: 1500px;
-	margin:auto;
-}
-
-.row{
-	display: flex;
-	flex-wrap: wrap;
+	margin: auto;
 }
 
 ul{
@@ -166,6 +169,8 @@ ul{
 	background-color: var(--footer-bg);
   color: #fff;
   padding: 60px 50px 30px;
+  margin: 0;
+  width: 100%;
 }
 
 .footer-col{
@@ -463,15 +468,6 @@ ul{
 /* ------------------------- */
 /* ----- Shopping Cart ----- */
 /* ------------------------- */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
-
-body {
-  font-family: 'Manrope', sans-serif;
-  background:#eee;
-}
-
 .size span {
   font-size: 11px;
 }
@@ -509,45 +505,13 @@ body {
   font-size: 11px;
 }
 
+.asd {
+  background: var(--blue);
+}
 
-/* ------------------------- */
+/* -------------------- */
 /* ----- Checkout ----- */
-/* ------------------------- */
-
-
-
-@use postcss-preset-env {
-  stage: 0;
-}
-
-:root {
-  --color-background: #fae3ea;
-  --color-primary: #0074D9;
-  --font-family-base: Poppin, sans-serif;
-  --font-size-h1: 1.25rem;
-  --font-size-h2: 1rem;
-}
-
-
-* {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-  background-color:#f1f6f9;
-  display: grid;
-  font-family: var(--font-family-base);
-  line-height: 1.5;
-  margin: 0;
-  min-block-size: 100vh;
-  padding: 5vmin;
-  place-items: center;
-}
-
+/* -------------------- */
 address {
   font-style: normal;
 }
