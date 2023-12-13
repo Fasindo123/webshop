@@ -33,7 +33,7 @@
                         <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
                             <h5 class="text-grey mt-1 mr-1 ml-1">2</h5><i class="fa fa-plus text-success"></i></div>
                         <div>
-                            <h5 class="text-grey">$20.00</h5>
+                            <h5 class="text-grey">Ft</h5>
                         </div>
                         <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
                     </div>
@@ -48,7 +48,7 @@
                         <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
                             <h5 class="text-grey mt-1 mr-1 ml-1">2</h5><i class="fa fa-plus text-success"></i></div>
                         <div>
-                            <h5 class="text-grey"></h5>
+                            <h5 class="text-grey">Ft</h5>
                         </div>
                         <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
                     </div>
@@ -63,7 +63,7 @@
                         <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
                             <h5 class="text-grey mt-1 mr-1 ml-1">2</h5><i class="fa fa-plus text-success"></i></div>
                         <div>
-                            <h5 class="text-grey">$20.00</h5>
+                            <h5 class="text-grey">Ft</h5>
                         </div>
                         <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
                     </div>
@@ -78,7 +78,7 @@
                         <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
                             <h5 class="text-grey mt-1 mr-1 ml-1">2</h5><i class="fa fa-plus text-success"></i></div>
                         <div>
-                            <h5 class="text-grey">$20.00</h5>
+                            <h5 class="text-grey">Ft</h5>
                         </div>
                         <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
                     </div>
