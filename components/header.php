@@ -10,8 +10,8 @@
       </form>
 
       <div class="icons">
-        <a href="cart.php" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="checkout.php" target="_blank"><i class="fa-solid fa-heart"></i></a>
+        <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="favorite.php"><i class="fa-solid fa-heart"></i></a>
         <a href="contact.php"><i class="fa-solid fa-envelope"></i></a>
         <a href=""><i class="fa-solid fa-user"></i></a>
       </div>

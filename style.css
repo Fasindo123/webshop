@@ -27,9 +27,22 @@ html, body {
 }
 
 ::selection {
-  background: #fff;
-  color: var(--blue);
+  background: var(--category);
+  color: #fff;
 }
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+} */
 
 a {
   color: #fff;
@@ -260,7 +273,7 @@ ul{
 /* ----- Contact ----- */
 /* ------------------- */
 .container {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .screen-body {
@@ -279,10 +292,11 @@ ul{
 
 .app-title {
   display: flex;
+  font-weight: 900;
   flex-direction: column;
   position: relative;
   color: #0074D9;
-  font-size: 26px;
+  font-size: 3rem;
 }
 
 .app-title:after {
@@ -291,8 +305,8 @@ ul{
   position: absolute;
   left: 0;
   bottom: -10px;
-  width: 25px;
-  height: 4px;
+  width: 40%;
+  height: 5px;
   background: #0074D9;
 }
 
@@ -300,6 +314,7 @@ ul{
   margin-top: 30px;
   margin-left: 0px;
   font-size: 19px;
+  font-weight: 500;
 }
 
 .app-contact a {
@@ -325,26 +340,42 @@ ul{
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 1px solid #666;
+  border-bottom: 2px solid var(--blue);
   outline: none;
   transition: border-color .2s;
 }
 
+textarea {
+  max-height: 350px;
+}
+
 .app-form-control::placeholder {
+  font-weight: 500;
   color: #666;
 }
 
 .app-form-control:focus {
-  border-bottom-color: #8d8d8d;
+  border-bottom-color: #000;
 }
 
 .kuldes {
-  background-color: #0074D9;
+  background-color: var(--blue);
   color: #fff;
+  font-weight: 600;
   border: none;
   padding: 10px;
   border-radius: 7px;
+  margin: 0 auto;
+  display: block;
+  transition: .5s;
 }
+
+.kuldes:hover {
+  background: #fff;
+  color: var(--blue);
+}
+
+
 
 @media screen and (max-width: 520px) {
   .screen-body {
@@ -385,6 +416,8 @@ ul{
 .block-map iframe {
   height: 300px;
   width: 100%;
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 /* ------------------- */
@@ -510,8 +543,16 @@ ul{
   font-size: 11px;
 }
 
-.asd {
+.buy {
+  font-weight: 700;
   background: var(--blue);
+  color: #fff;
+  transition: .5s;
+}
+
+.buy:hover {
+  background: var(--color-background);
+  color: var(--blue);
 }
 
 /* -------------------- */

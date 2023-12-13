@@ -10,12 +10,13 @@
             <div class="screen-body container">
               <div class="screen-body-item left">
                 <div class="app-title">
-                  <span>Kapcsolat</span>
+                  <span><i class="fa-solid fa-envelopes-bulk"></i> Kapcsolatfelvétel</span>
                 </div>
-                <div class="app-contact">Kapcsolat telefonszám: <br> <a href="tel:06300922911"> 06 30 092 2911</a></div>
-                <div class="app-contact">Kapcsolat e-mail: <br> <a href="mailto:levike.pinter@gmail.com">levike.pinter@gmail.com</a></div>
-                <div class="app-contact">Helyszín: <br>7400 Kaposvár, Damijanich utca 17.</div>
+                <div class="app-contact"><i class="fa-solid fa-phone"></i> <a href="tel:06300922911"> 06 30 092 2911</a></div>
+                <div class="app-contact"><i class="fa-solid fa-envelope"></i> <a href="mailto:levike.pinter@gmail.com">levike.pinter@gmail.com</a></div>
+                <div class="app-contact"><i class="fa-solid fa-location-dot"></i> 7400 Kaposvár, Damijanich utca 17.</div>
               </div>
+              
               <div class="screen-body-item">
                 <div class="app-form">
                   <div class="app-form-group">
@@ -28,10 +29,11 @@
                     <input class="app-form-control" placeholder="Telefonszám" id="phone-number" oninput="formatPhoneNumber(this)">
                   </div>
                   <div class="app-form-group message">
-                    <input class="app-form-control" placeholder="Üzenet">
+                    <textarea class="app-form-control" placeholder="Üzenet"></textarea>
                   </div>
+
                   <div>
-                    <button class="kuldes" id="submit" onclick="sendForm()">Küldés</button>
+                    <button class="kuldes" id="submit" onclick="sendForm()">Küldés <i class="fa-solid fa-paper-plane"></i></button>
                   </div>
                 </div>
               </div>
