@@ -9,4 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <script scr="script.js"></script>
     <script src="https://kit.fontawesome.com/535ee732fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../bootstrap.min.css" crossorigin="anonymous"></script>
 </head>

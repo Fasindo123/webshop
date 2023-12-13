@@ -27,8 +27,7 @@ html, body {
 a {
   color: #fff;
 }
-
-/* ------------------ */
+/* ------------------- */
 /* Back to Top Button */
 /* ------------------ */
 #backToTopBtn {
@@ -252,81 +251,20 @@ ul{
   font-weight: 900;
 }
 
-/* Contact */
+/* ------------------- */
+/* ----- Contact ----- */
+/* ------------------- */
 .background {
-  display: flex;
-  min-height: 100vh;
+  margin-top: 100px;
+  height: 100%;
+  background: #f1f6f9;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
-}
-
-.screen {
-  position: relative;
-  background: #3e3e3e;
-  border-radius: 15px;
-}
-
-.screen:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-  z-index: -1;
-}
-
-.screen-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  background: #4d4d4f;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.screen-header-left {
-  margin-right: auto;
-}
-
-.screen-header-button {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 3px;
-  border-radius: 8px;
-  background: white;
-}
-
-.screen-header-button.close {
-  background: #ed1c6f;
-}
-
-.screen-header-button.maximize {
-  background: #e8e925;
-}
-
-.screen-header-button.minimize {
-  background: #74c54f;
-}
-
-.screen-header-right {
-  display: flex;
-}
-
-.screen-header-ellipsis {
-  width: 3px;
-  height: 3px;
-  margin-left: 2px;
-  border-radius: 8px;
-  background: #999;
 }
 
 .screen-body {
@@ -365,8 +303,12 @@ ul{
 .app-contact {
   margin-top: 50px;
   margin-left: 0px;
-  font-size: 15x;
-  color: #fff;
+  font-size: 15px;
+}
+
+.app-contact a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .app-form-group {
@@ -377,19 +319,12 @@ ul{
   margin-top: 40px;
 }
 
-.app-form-group.buttons {
-  margin-bottom: 0;
-  text-align: right;
-}
-
 .app-form-control {
   width: 100%;
   padding: 10px 0;
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #ddd;
-  font-size: 14px;
   outline: none;
   transition: border-color .2s;
 }
@@ -399,78 +334,48 @@ ul{
 }
 
 .app-form-control:focus {
-  border-bottom-color: #ddd;
+  border-bottom-color: #8d8d8d;
 }
 
-.app-form-button {
-  background: none;
-  border: none;
-  color: #0074D9;
-  font-size: 14px;
-  cursor: pointer;
-  outline: none;
-}
-
-.app-form-button:hover {
-  color: #b9134f;
-}
-
-.credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  color: #ffa4bd;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.credits-link {
-  display: flex;
-  align-items: center;
+.kuldes {
+  background-color: #0074D9;
   color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.dribbble {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
+  border: none;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 520px) {
   .screen-body {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .screen-body-item.left {
-    margin-bottom: 30px;
+      margin-bottom: 30px;
   }
 
   .app-title {
-    flex-direction: row;
+      flex-direction: row;
   }
 
   .app-title span {
-    margin-right: 12px;
+      margin-right: 12px;
   }
 
   .app-title:after {
-    display: none;
+      display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
   .screen-body {
-    padding: 40px;
+      padding: 40px;
   }
 
   .screen-body-item {
-    padding: 0;
+      padding: 0;
   }
 }
+
 
 /* ------------------- */
 /* ----- Product ----- */
@@ -558,3 +463,234 @@ ul{
 /* ------------------------- */
 /* ----- Shopping Cart ----- */
 /* ------------------------- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background:#eee;
+}
+
+.size span {
+  font-size: 11px;
+}
+
+.color span {
+  font-size: 11px;
+}
+
+.product-deta {
+  margin-right: 70px;
+}
+
+.gift-card:focus {
+  box-shadow: none;
+}
+
+.pay-button {
+  color: #fff;
+}
+
+.pay-button:hover {
+  color: #fff;
+}
+
+.pay-button:focus {
+  color: #fff;
+  box-shadow: none;
+}
+
+.text-grey {
+  color: #a39f9f;
+}
+
+.qty i {
+  font-size: 11px;
+}
+
+
+/* ------------------------- */
+/* ----- Checkout ----- */
+/* ------------------------- */
+
+
+
+@use postcss-preset-env {
+  stage: 0;
+}
+
+:root {
+  --color-background: #fae3ea;
+  --color-primary: #0074D9;
+  --font-family-base: Poppin, sans-serif;
+  --font-size-h1: 1.25rem;
+  --font-size-h2: 1rem;
+}
+
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#f1f6f9;
+  display: grid;
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+  margin: 0;
+  min-block-size: 100vh;
+  padding: 5vmin;
+  place-items: center;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: 1.2;
+  margin-block: 0 1.5em;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: 1.2;
+  margin-block: 0 0.5em;
+}
+
+legend {
+  font-weight: 600;
+  margin-block-end: 0.5em;
+  padding: 0;
+}
+
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+}
+
+input[type="radio"] {
+  accent-color: var(--color-primary);
+}
+
+table {
+  border-collapse: collapse;
+  inline-size: 100%;
+}
+
+tbody {
+  color: black;
+}
+
+td {
+  padding-block: 0.125em;
+}
+
+tfoot {
+  border-top: 1px solid #b4b4b4;
+  font-weight: 600;
+}
+
+.align {
+  display: grid;
+  place-items: center;
+}
+
+.button {
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: 999em;
+  color: #fff;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  padding-block: 0.75em;
+  padding-inline: 1em;
+  transition: 0.3s;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #fff;
+}
+
+.button--full {
+  inline-size: 100%;
+}
+
+.card {
+  border-radius: 1em;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1em;
+}
+
+.form {
+  display: grid;
+  gap: 2em;
+}
+
+.form__radios {
+  display: grid;
+  gap: 1em;
+}
+
+.form__radio {
+  align-items: center;
+  background-color: #fefdfe;
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+  display: flex;
+  padding: 1em;
+}
+
+.form__radio label {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: 1em;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-block: 0.5em;
+  padding-inline: 1em;
+}
+
+.icon {
+  block-size: 1em;
+  display: inline-block;
+  fill: currentColor;
+  inline-size: 1em;
+  vertical-align: middle;
+}
+
+.iphone {
+  border-radius: 2em;
+  block-size: 812px;
+  box-shadow: 0 0 5em rgba(0, 0, 0, 0.0625);
+  inline-size: 375px;
+  overflow: auto;
+  padding: 2em;
+}
