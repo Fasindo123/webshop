@@ -4,7 +4,6 @@
 <?php require_once('components/head.php'); ?>
 <body>
       <?php require_once('components/header.php'); ?>
-      <?php require_once('components/login.php'); ?>
       <div class="background">
   <div class="container">
     <div class="screen">
@@ -53,11 +52,7 @@
   </div>
 </div>
 
-      <button id="backToTopBtn" onclick="scrollToTop()">
-        <i class="fa-solid fa-chevron-up"></i>
-      </button>
-
-    <script src="script.js"></script>
+    <?php require_once("components/scripts.php"); ?>
     <?php require_once("components/footer.php"); ?>
   </div>
 

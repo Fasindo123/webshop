@@ -5,9 +5,9 @@
       <?php require_once('components/header.php'); ?>
       
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-      <?php require_once("components/footer.php"); ?>
+
+  <?php require_once("components/footer.php"); ?>
   </div>
 
   </body>

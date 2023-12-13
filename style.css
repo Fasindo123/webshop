@@ -100,22 +100,19 @@ a{
   text-decoration: none;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-}
-
 .custom-navbar {
   background: var(--navbar-bg);
   color: #fff;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .custom-search input[type=text]{
   font-size: 1rem;
-  width: 500px;
+  width: 900px;
   height: 25px;
   border-radius: 25px;
   padding: 5px 15px;
@@ -141,23 +138,10 @@ nav {
 .custom-search button:hover{
   background: #fff;
   color: var(--blue);
-} 
-
-.loginBtn {
-  background: #0074D9;
-  font-weight: 700;
-  color: #fff;
-  padding: 10px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 10px;
-  transition: .5s;
 }
 
-.loginBtn:hover {
-  background: #fff;
-  color: var(--blue);
-  cursor: pointer;
+.icons a {
+  margin-right: 20px;
 }
 
 /* ------------------------- */
@@ -266,222 +250,7 @@ ul{
   font-weight: 900;
 }
 
-/* ------------------------ */
-/* ----- Login Design ----- */
-/* ------------------------ */
-/* .btnLogin-popup {
-  width: 130px;
-  height: 50px;
-  background: transparent;
-  border: 2px solid #fff;
-  border-radius: 6px;
-  outline: none;
-  cursor: pointer;
-  font-size: 1.1em;
-  color: #fff;
-  font-weight: 500;
-  margin-left: 40px;
-  transition: .5s;
-}
-
-.btnLogin-popup:hover {
-  background: #fff;
-  color: var(--bg);
-} */
-
-.wrapper {
-  z-index: 1;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 440px;
-  background: #fff;
-  border: 3px solid var(--blue);
-  border-radius: 20px;
-  box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  transform: scale(0);
-  transition: transform .5s ease, height .2s ease;
-}
-
-
-
-.wrapper.active-popup {
-  transform: scale(1);
-}
-
-.wrapper.active {
-  height: 520px;
-}
-
-.wrapper .form-box {
-  width: auto;
-  padding: 0;
-}
-
-.wrapper .form-box.login {
-  transition: transform .18s ease;
-  transform: translateX(0);
-}
-
-.wrapper.active .form-box.login {
-  transition: none;
-  transform: translateX(-400px);
-}
-
-.wrapper .form-box.register {
-  position: absolute;
-  transition: none;
-  transform: translateX(400px);
-}
-
-.wrapper.active .form-box.register {
-  transition: transform .18s ease;
-  transform: translateX(0);
-}
-
-.wrapper .icon-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45px;
-  height: 45px;
-  background: red;
-  font-size: 2em;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom-left-radius: 20px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.form-box h2 {
-  font-weight: 900;
-  font-size: 2em;
-  color: 162938;
-  text-align: center;
-}
-
-.input-box {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  border-bottom: 2px solid var(--login-color);
-  margin: 30px 0;
-}
-
-.input-box label {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  transform: translateY(-50%);
-  color: var(--login-color);
-  font-weight: 500;
-  pointer-events: none;
-  transition: .5s;
-}
-
-.input-box input:focus~label,
-.input-box input:valid~label {
-  top: -5px;
-}
-
-.input-box input {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 1em;
-  color: var(--login-color);
-  font-weight: 600;
-  padding: 0 35px 0 5px;
-}
-
-.input-box .icon {
-  position: absolute;
-  right: 8px;
-  font-size: 1.2em;
-  color: var(--login-color);
-  line-height: 57px;
-}
-
-.remember-forgot {
-  font-size:  .9em;
-  color: var(--login-color);
-  font-weight: 500;
-  margin: -15px 0 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.remember-forgot label input {
-  accent-color: var(--login-color);
-  margin-right: 3px;
-}
-
-.remember-forgot a {
-  color: var(--login-color);
-  text-decoration: none;
-}
-
-.remember-forgot a:hover {
-  text-decoration: underline;
-}
-
-.login-btn {
-  width: 100%;
-  height: 45px;
-  background: var(--blue);
-  color: #fff;
-  border: none;
-  outline: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: 500;
-}
-
-.login-register {
-  font-size: .9em;
-  color: var(--login-color);
-  text-align: center;
-  font-weight: 500;
-  margin: 25px 0 10px;
-}
-
-.login-register p a {
-  color: var(--login-color);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.login-register p a:hover {
-  text-decoration: underline;
-}
-
-.kapcsolat {
-  right: 30px;
-  text-decoration: none;
-}
-
 /* Contact */
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
-  font-size: 12px;
-}
-
 body, button, input {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
