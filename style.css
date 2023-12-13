@@ -600,7 +600,7 @@ tfoot {
 
 .button:focus,
 .button:hover {
-  background-color: #fff;
+  background-color: #00b3ff;
 }
 
 .button--full {
