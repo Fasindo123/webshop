@@ -324,7 +324,6 @@ ul{
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #ddd;
   outline: none;
   transition: border-color .2s;
 }
@@ -334,7 +333,7 @@ ul{
 }
 
 .app-form-control:focus {
-  border-bottom-color: #ddd;
+  border-bottom-color: #8d8d8d;
 }
 
 .kuldes {
