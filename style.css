@@ -67,7 +67,7 @@ a{
 /* ----- Custom Navigationbar ----- */
 /* -------------------------------- */
 .logo {
-  width: 100px;
+  height: 35px;
 }
 
 .nav-fixed {
@@ -79,7 +79,7 @@ a{
 .category {
   background: var(--category);
   color: #fff;
-  padding: 20px;
+  padding-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +147,7 @@ a{
 /* ------------------------- */
 /* ----- Custom Footer ----- */
 /* ------------------------- */
-.container{
+.footer-container{
 	max-width: 1500px;
 	margin:auto;
 }
@@ -186,7 +186,7 @@ ul{
   z-index: 0;
 	content: '';
 	position: absolute;
-	left:0;
+	left: 0;
 	bottom: -10px;
 	background: var(--blue);
 	height: 3px;
@@ -476,3 +476,51 @@ body, button, input {
     padding: 0;
   }
 }
+
+/* ------------------- */
+/* ----- Product ----- */
+/* ------------------- */
+.product {
+  margin: 200px 300px 200px;
+  padding: 20px;
+  height: auto;
+}
+
+.product img {
+  width: 400px;
+}
+
+.product h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3em;
+  margin: 20px;
+}
+
+.product h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.product p {
+  text-align: justify;
+  padding: 20px 40px;
+  font-weight: 300;
+}
+
+.productBtn {
+  font-size: 1.25em;
+  margin-right: 15px;
+  float: right;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  background: var(--blue);
+  color: #fff;
+} 
+
+
+
+/* ------------------------- */
+/* ----- Shopping Cart ----- */
+/* ------------------------- */
