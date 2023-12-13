@@ -4,6 +4,7 @@
 <?php require_once('components/head.php'); ?>
 <body>
   <?php require_once('components/header.php'); ?>
+
   <br><br><br><br><br><br><br><br><br><br>
     <div class="background">
       <div class="container">
@@ -30,7 +31,7 @@
                     <input class="app-form-control" placeholder="Üzenet">
                   </div>
                   <div>
-                    <button class="kuldes" onclick="sendForm()">Küldés</button>
+                    <button class="kuldes" id="submit" onclick="sendForm()">Küldés</button>
                   </div>
                 </div>
               </div>
