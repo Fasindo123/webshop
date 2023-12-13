@@ -25,29 +25,35 @@
             <span>CONTACT</span>
             <span>US</span>
           </div>
-          <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
         </div>
-        <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="Név">
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>Kapcsolat</span>
             </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="E-mail">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="Telefonszám">
-            </div>
-            <div class="app-form-group message">
-              <input class="app-form-control" placeholder="Üzenet">
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
+            <div class="app-contact">Kapcsolat telefonszám: <br> 06 30 092 2911</div>
+            <div class="app-contact">Kapcsolat e-mail: <br> levike.pinter@gmail.com</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="Név" id="nev">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="E-mail" id="email">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="Telefonszám" id="telefonszam">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="Üzenet">
+              </div>
+              <div>
+                <button class="loginBtn">Küldés</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
 </div>
@@ -56,5 +62,7 @@
     <?php require_once("components/footer.php"); ?>
   </div>
 
+    <?php require_once("components/scripts.php"); ?>
+    <?php require_once('components/footer.php'); ?>
   </body>
 </html>

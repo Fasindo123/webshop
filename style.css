@@ -351,7 +351,7 @@ body, button, input {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #ea1d6f;
+  color: #0074D9;
   font-size: 26px;
 }
 
@@ -363,13 +363,14 @@ body, button, input {
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: #ea1d6f;
+  background: #0074D9;
 }
 
 .app-contact {
-  margin-top: auto;
-  font-size: 8px;
-  color: #888;
+  margin-top: 50px;
+  margin-left: 0px;
+  font-size: 15x;
+  color: #fff;
 }
 
 .app-form-group {
@@ -409,7 +410,7 @@ body, button, input {
 .app-form-button {
   background: none;
   border: none;
-  color: #ea1d6f;
+  color: #0074D9;
   font-size: 14px;
   cursor: pointer;
   outline: none;
