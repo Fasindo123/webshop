@@ -474,12 +474,6 @@ body {
 /* ----- Checkout ----- */
 /* ------------------------- */
 
-
-
-@use postcss-preset-env {
-  stage: 0;
-}
-
 :root {
   --color-background: #fae3ea;
   --color-primary: #0074D9;
