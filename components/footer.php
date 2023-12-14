@@ -15,10 +15,9 @@
             <h4><i class="fa-solid fa-envelope"></i> Kapcsolatfelvétel</h4>
                 <ul>
                     <li><a href="contact.php"><i class="fa-solid fa-envelopes-bulk"></i> Kapcsolat</a></li>
-                    <li><i class="fa-solid fa-location-dot"></i> 7255 Nagyberki,
-                        Széchenyi utca 1.</li>
-                    <li><i class="fa-solid fa-phone"></i> (+36) 30 092 2911</li>
-                    <li><i class="fa-solid fa-envelope"></i> levike.pinter@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 9000, Alsóbögyörösvalagpuszta Kukika u. 12</li>
+                    <li><i class="fa-solid fa-phone"></i> (+36) 30 123 4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> techtrendstore@gmail.com</li>
                     <li><i class="fa-solid fa-clock"></i> Hétfő - Péntek 8:00 - 16:00</li>
                 </ul>
         </div>
