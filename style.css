@@ -134,6 +134,7 @@ a {
 
 .custom-search input[type=text]{
   font-size: 1rem;
+  font-weight: 700;
   width: 900px;
   height: 32px;
   border-radius: 25px;
@@ -704,4 +705,45 @@ tfoot {
   inline-size: 375px;
   overflow: auto;
   padding: 2em;
+}
+
+/* ------------------------ */
+/* ----- Product Card ----- */
+/* ------------------------ */
+.product-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 70px;
+  max-width: 300px;
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.product-card h2 {
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.product-card h4 {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+}
+
+.product-card button {
+  margin-top: 10px;
+  background: none;
+  float: right;
+}
+
+.product-card button a i {
+  margin-right: 10px;
+  color: var(--blue);
+  font-size: 1.5em;
 }
