@@ -545,14 +545,14 @@ textarea {
 
 .buy {
   font-weight: 700;
-  background: var(--blue);
+  background: #48ff00;
   color: #fff;
   transition: .5s;
 }
 
 .buy:hover {
-  background: var(--color-background);
-  color: var(--blue);
+  background: #fff;
+  color: #48ff00;
 }
 
 /* -------------------- */
