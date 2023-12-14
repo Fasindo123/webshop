@@ -274,6 +274,7 @@ ul{
 /* ------------------- */
 .container {
   margin-top: 100px;
+  padding-top: 50px;
 }
 
 .screen-body {
@@ -546,14 +547,14 @@ textarea {
 
 .buy {
   font-weight: 700;
-  background: #48ff00;
+  background: #0074D9;
   color: #fff;
   transition: .5s;
 }
 
 .buy:hover {
   background: #fff;
-  color: #48ff00;
+  color: #0074D9;
 }
 
 /* -------------------- */
