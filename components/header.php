@@ -29,6 +29,17 @@ $conn->close();
         <input class="form-control me-2 custom-search-input" type="search" placeholder="Keresés..." aria-label="Search" style="border-radius: 15px; font-weight: 600;">
         <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
+<!-- Peti search még dolgozom rajta! Nagyon kezdetleges:
+    <div class="collapse navbar-collapse custom-search" id="navbarSupportedContent">
+    <div id="search">
+			<form method="get" action="search.php">
+				<fieldset>
+				<input type="text" name="s" id="search-text" size="15" placeholder="Search" />
+				<input type="submit" id="search-submit" value="GO" />
+				</fieldset>
+			</form>
+		</div> -->
+
 
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
