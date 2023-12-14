@@ -728,8 +728,9 @@ tfoot {
   border-radius: 20px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
   padding: 20px;
-  margin: 70px;
+  margin: 70px 12px;
   max-width: 300px;
+  display: inline-block;
 }
 
 .product-card img {
