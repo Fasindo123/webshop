@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <title>TechTrendStore - Kapcsolat</title>
+    <title>Kapcsolat - TechTrendStore</title>
 <?php require_once('components/head.php'); ?>
 <body>
   <?php require_once('components/header.php'); ?>
-  
+
     <form action="contact.php" method="post">
       <div class="screen-body container">
         <div class="screen-body-item left">
