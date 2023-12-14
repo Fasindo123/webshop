@@ -52,7 +52,7 @@ $conn->close();
       <?php 
         if ($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
-            echo '<li id="'.$row['id'].'"><a href="#">'.$row['label'].'</a></li>';
+            echo '<li><a href="#" id="'.$row['id'].'">'.$row['label'].'</a></li>';
           }
         } else {
           echo "Nincsenek kategóriák!";
