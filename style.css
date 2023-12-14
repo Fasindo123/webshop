@@ -91,19 +91,13 @@ a {
   height: 35px;
 }
 
-.nav-fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-}
-
 .category {
   background: var(--category);
   color: #fff;
-  padding: 15px;
+  padding-top: 15px;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
 }
 
@@ -129,7 +123,7 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .custom-search input[type=text]{
@@ -144,6 +138,10 @@ a {
 
 .custom-search{
   text-align: center;
+}
+
+ul li a i {
+  color: #fff;
 }
    
 .custom-search button{
@@ -509,6 +507,12 @@ textarea {
 /* ------------------------- */
 /* ----- Shopping Cart ----- */
 /* ------------------------- */
+.shopping-title {
+  font-weight: 900;
+  font-size: 35px;
+  text-align: center;
+}
+
 .size span {
   font-size: 11px;
 }
@@ -526,7 +530,15 @@ textarea {
 }
 
 .pay-button {
+  background-color: var(--blue);
   color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 0 auto;
+  display: block;
+  transition: .5s;
 }
 
 .pay-button:hover {
@@ -787,7 +799,8 @@ tfoot {
 
 .cart_title {
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 900;
+  text-align: center;
   margin: 70px 40px;
 }
 
