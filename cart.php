@@ -4,7 +4,7 @@
 <?php require_once('components/head.php'); ?>
 <body>
 <?php require_once('components/header.php'); ?>
-<br><br>
+<br>
         <div class="container mt-5 mb-5">
             <div class="d-flex justify-content-center row">
                 <div class="col-md-8">

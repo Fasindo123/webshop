@@ -25,7 +25,10 @@
               <input class="app-form-control" placeholder="E-mail" id="email" name="email" required>
             </div>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="Telefonszám" id="phone-number" name="phone-number" oninput="formatPhoneNumber(this)" required>
+              <input class="app-form-control" placeholder="Telefonszám" id="phonenumber" name="phonenumber" oninput="formatPhoneNumber(this)" required>
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Tárgy" id="targy" name="targy" required></input>
             </div>
             <div class="app-form-group message">
               <textarea class="app-form-control" placeholder="Üzenet" name="uzenet" required></textarea>

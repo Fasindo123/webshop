@@ -10,7 +10,7 @@ $uzenet = "üres";
 if (isset($_POST["nev"])) {
     $nev = $_POST["nev"];
     $email = $_POST["email"];
-    $phonenumber = $_POST["phone-number"];
+    $phonenumber = $_POST["phonenumber"];
     $uzenet = $_POST["uzenet"];
 }
 
@@ -37,8 +37,8 @@ if (isset($_POST['Submit'])) {
     $mail->Password = 'Peti.2006.Mazli';                               // SMTP jelszo
 
     $mail->CharSet = 'UTF-8';
-    $mail->From     = 'huberpetergyorgy@outlook.hu';            // Felado e-mail cime
-    $mail->FromName = 'Huber Péter György';                // Felado neve
+    $mail->From     = $email;            // Felado e-mail cime
+    $mail->FromName = $nev;                // Felado neve
     $mail->AddAddress('huberpetergyorgy@gmail.com', 'Huber Péter György');         // Cimzett es neve
     $mail->AddAddress('huberpetergyorgy@outlook.hu', 'Huber Péter György');         // Cimzett es neve
     $mail->AddReplyTo($email); // Valaszlevel ide
