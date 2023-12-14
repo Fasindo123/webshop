@@ -11,9 +11,9 @@
           <div class="app-title">
             <span><i class="fa-solid fa-envelopes-bulk"></i> Kapcsolatfelvétel</span>
           </div>
-          <div class="app-contact"><i class="fa-solid fa-phone"></i> <a href="tel:06300922911"> 06 30 092 2911</a></div>
-          <div class="app-contact"><i class="fa-solid fa-envelope"></i> <a href="mailto:levike.pinter@gmail.com">levike.pinter@gmail.com</a></div>
-          <div class="app-contact"><i class="fa-solid fa-location-dot"></i> 7400 Kaposvár, Damijanich utca 17.</div>
+          <div class="app-contact"><i class="fa-solid fa-phone"></i> 06 30 123 4567</div>
+          <div class="app-contact"><i class="fa-solid fa-envelope"></i> techtrendstore@gmail.com</a></div>
+          <div class="app-contact"><i class="fa-solid fa-location-dot"></i> 7400 Kaposvár, Szent Imre u. 2.</div>
         </div>
         
         <div class="screen-body-item">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="block-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2753.369275933826!2d17.7972176!3d46.362061000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47683e000240052b%3A0x3b1f6a2a20645b22!2zS2Fwb3N2w6FyaSBTWkMgRcO2dHbDtnMgTG9yw6FuZCBNxbFzemFraSBUZWNobmlrdW0gw6lzIEtvbGzDqWdpdW0!5e0!3m2!1shu!2shu!4v1698227964602!5m2!1shu!2shu" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1376.7285379304162!2d17.793377654922637!3d46.360318782583526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476815fec4f56e7b%3A0x2465bce86ff508af!2zS2Fwb3N2w6FyaSBTWkMgTm9zemxvcHkgR8Ohc3DDoXIgS8O2emdhemRhc8OhZ2kgVGVjaG5pa3Vt!5e0!3m2!1shu!2shu!4v1702569823848!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </form>
   <?php require_once('components/footer.php'); ?>
