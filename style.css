@@ -175,6 +175,7 @@ ul li a i {
 
 ul{
 	list-style: none;
+  padding: 0;
 }
 
 .footer{
@@ -725,10 +726,10 @@ tfoot {
 /* ------------------------ */
 .product-card {
   background: #fff;
-  border-radius: 20px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
-  margin: 70px 12px;
+  margin: 40px 12px;
   max-width: 300px;
   display: inline-block;
 }
