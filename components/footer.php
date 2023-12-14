@@ -42,4 +42,8 @@
 
         <div class="copyright">Copyright &copy; 2023 - TechTrendStore</div>
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+    <script src="script.js"></script>
+
 </footer>

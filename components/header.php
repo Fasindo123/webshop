@@ -21,8 +21,9 @@ $conn->close();
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php"><img src="imgs/tts.png" alt="TechTrendStore Logó" title="TechTrendStore Logó" class="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa-solid fa-bars"></i>
     </button>
+
     <div class="collapse navbar-collapse custom-search" id="navbarSupportedContent">
       <form class="d-flex justify-content-center" role="search" style="width: 60%; margin: 0 auto;">
         <input class="form-control me-2 custom-search-input" type="search" placeholder="Keresés..." aria-label="Search" style="border-radius: 15px; font-weight: 600;">

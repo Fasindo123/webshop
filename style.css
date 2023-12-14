@@ -51,26 +51,21 @@ a {
 /* ------------------- */
 /* Back to Top Button */
 /* ------------------ */
-#backToTopBtn {
+#myBtn {
   display: none;
   position: fixed;
+  width: 50px;
+  height: 50px;
   bottom: 20px;
   right: 20px;
-  background-color: var(--blue);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
   font-size: 20px;
-  cursor: pointer;
+  border: none;
   outline: none;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-#backToTopBtn:hover {
-  background: #fff;
-  color: var(--blue);
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 #myBtn:hover {
@@ -78,11 +73,6 @@ a {
   color: var(--blue);
 }
 
-#myBtn.active {
-  background: #fff;
-  color: var(--blue);
-  transform: scale(1.1);
-}
 
 /* -------------------------------- */
 /* ----- Custom Navigationbar ----- */
