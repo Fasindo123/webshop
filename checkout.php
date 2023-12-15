@@ -22,7 +22,7 @@
 
     <form action="checkout.php" class="form" method="POST">
         <div>
-        <h2>Cím</h2>
+        <h2>Szállítási adatok</h2>
 
         <div class="card">
             <address>
