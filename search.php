@@ -1,18 +1,21 @@
 <?php
 function searchAllPages($search_query) {
     $all_pages = [
+        'components/footer.php',
+        'components/head.php',
+        'components/header.php',
         'index.php',
         'contact.php',
         'checkout.php',
         'cart.php',
         'product.php',
-        'favourite.php',       
+        'favourite.php',
+        'sendContact.php',
     ];
 
     $search_results = [];
 
     foreach ($all_pages as $page) {
-        // Read the content of each page and check for the search query
         $content = file_get_contents($page);
         if (stripos($content, $search_query) !== false) {
             $search_results[] = $page;
