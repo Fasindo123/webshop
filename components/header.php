@@ -41,7 +41,7 @@ $conn->close();
           <a class="nav-link" href="contact.php"><i class="fa-solid fa-envelope"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+          <a class="nav-link" href="dashboard/account"><i class="fa-solid fa-user"></i></a>
         </li>
       </ul>
     </div>
