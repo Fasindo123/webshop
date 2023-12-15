@@ -202,6 +202,13 @@ ul{
 	width: 100px;
 }
 
+.footer-col img {
+  margin-right: 10px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
@@ -729,6 +736,11 @@ tfoot {
   }
 }
 
+.product-card a {
+  text-decoration: none;
+  color: #000;
+}
+
 .product-card img {
   width: 100%;
 }
@@ -933,4 +945,9 @@ tfoot {
   color: var(--blue);
   background-color: #fff;
   
+}
+
+.description {
+  overflow-wrap: break-word;
+  hyphens: auto;
 }

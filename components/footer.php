@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer mt-5">
     <div class="footer-container">
         <div class="row">
         <div class="footer-col">
@@ -32,7 +32,10 @@
                     <li><a href="#">Adatvédelmi Nyilatkozat</a></li>
                 </ul> <br>
             <h4><i class="fa-solid fa-credit-card"></i> Fizetési módok</h4>
-            <img class="ms-img ms-img--fluid" src="//assets.mmsrg.com/isr/166325/c1/-/ms-cms-mmhu-l16446034/feecms_x_x_x" srcset="//assets.mmsrg.com/isr/166325/c1/-/ms-cms-mmhu-l16446034/feecms_x_x_x 1x" alt="Fizetési módok">
+            <img src="imgs/paypal.png" alt="PayPal" title="PayPal">
+            <img src="imgs/visa.png" alt="">
+            <img src="imgs/mastercard.png" alt="">
+        
         </div>
         <div class="footer-col">
             <h4><i class="fa-solid fa-hashtag"></i> Közösségi Média</h4>
