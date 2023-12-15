@@ -15,7 +15,7 @@
 			Html ::  page_css('animate.css');
 		?>
 				<?php 
-			Html ::  page_css('bootstrap-theme-boostrap-material-design.css');
+			Html ::  page_css('bootstrap-theme-material.min.css');
 			Html ::  page_css('custom-style.css');
 		?>
 		<?php
@@ -29,7 +29,7 @@
 		</style>
 	</head>
 	<body style="padding-top:50px;">
-		<nav class="navbar navbar-expand-lg bg-primary navbar-light fixed-top">
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
 			<a class="navbar-brand" href="<?php print_link('') ?>">
 				<img class="img-responsive" src="<?php print_link(SITE_LOGO); ?>" /> 
 				<?php echo SITE_NAME ?>

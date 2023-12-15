@@ -1,12 +1,4 @@
 <?php
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'Exception.php';
-require 'PHPMailer.php';
-require 'SMTP.php';
-
 class Mailer
 {
 	protected $smtp_username = 'contact.ttrendstore@gmail.com';
