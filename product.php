@@ -1,3 +1,29 @@
+<?php 
+if (isset($_GET['id'])) {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "webshop";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT * FROM items WHERE id=" . $_GET['id'] . " LIMIT 1";
+    $result = $conn->query($sql);
+
+    if ($result) {
+        $selected_item = $result->fetch_assoc();
+    } else {
+        echo "Error: " . $conn->error;
+    }
+
+    $conn->close();
+}
+?>
 <!DOCTYPE html>
 <html lang="hu">
 <?php require_once('components/head.php'); ?>
@@ -56,11 +82,11 @@
     </div>
 
     <div class="col-sm-8">
-      <h1 class="text-center">Termék neve</h1>
+      <h1 class="text-center"><?php echo $selected_item['name'] ?></h1>
       <h2>Termékleírás</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa architecto totam molestias blanditiis consectetur minus libero deserunt? Deleniti iusto iure minus laboriosam laborum qui voluptates? Excepturi sit rem vel?</p>
-      <h2>Ár: 74 000 Ft</h2>
-      <h2>Elérhető: XY DB</h2>
+      <p class="description"><?php echo $selected_item['description'] ?></p>
+      <h2>Ár: <?php echo $selected_item['price'] ?> Ft</h2>
+      <h2>Elérhető: <?php echo $selected_item['stock'] ?> DB</h2>
       <button class="productBtn"><a href=""><i class="fa-solid fa-heart-circle-plus"></i></a></button>
       <button class="productBtn"><a href=""><i class="fa-solid fa-cart-plus"></i></a></button>
     </div>
