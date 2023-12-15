@@ -5,7 +5,7 @@
 <body>
   <?php require_once('components/header.php'); ?>
 
-    <form action="contact.php" method="post">
+    <form action="sendContact.php" method="post">
       <div class="screen-body container">
         <div class="screen-body-item left">
           <div class="app-title">
@@ -40,9 +40,9 @@
           </div>
         </div>
       </div>
-      <div class="block-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1376.7285379304162!2d17.793377654922637!3d46.360318782583526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476815fec4f56e7b%3A0x2465bce86ff508af!2zS2Fwb3N2w6FyaSBTWkMgTm9zemxvcHkgR8Ohc3DDoXIgS8O2emdhemRhc8OhZ2kgVGVjaG5pa3Vt!5e0!3m2!1shu!2shu!4v1702569823848!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      <!-- <div class="block-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1376.7364371395822!2d17.79275469481946!3d46.360005288582215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476815fec4f56e7b%3A0x2465bce86ff508af!2zS2Fwb3N2w6FyaSBTWkMgTm9zemxvcHkgR8Ohc3DDoXIgS8O2emdhemRhc8OhZ2kgVGVjaG5pa3Vt!5e0!3m2!1shu!2shu!4v1702628065756!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> -->
     </form>
   <?php require_once('components/footer.php'); ?>
 </body>
@@ -135,7 +135,7 @@ function sendForm() {
             hasErrors = true; // Set the flag to true if there is an error
         }
 
-        const phoneNumber = document.getElementById("phone-number").value.replace(/\D/g, '');
+        const phoneNumber = document.getElementById("phonenumber").value.replace(/\D/g, '');
         if (phoneNumber.length < 10) {
             errorMessages.push('Hibás telefonszám formátum! \n Pl: (+36) 00 000 0000');
             // Add red border to the phone number input field

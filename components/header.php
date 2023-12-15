@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 $sql = "SELECT * FROM categories";
-$result = $conn->query($sql);
+$categories = $conn->query($sql);
 
 $conn->close();
 ?>
@@ -65,8 +65,8 @@ $conn->close();
   <nav class="category">
     <ul>
       <?php 
-        if ($result->num_rows > 0) {
-          while($row = $result->fetch_assoc()) {
+        if ($categories->num_rows > 0) {
+          while($row = $categories->fetch_assoc()) {
             echo '<li><a href="#" id="'.$row['id'].'">'.$row['label'].'</a></li>';
           }
         } else {
