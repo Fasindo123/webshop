@@ -167,23 +167,6 @@ class UsersController extends SecureController{
 				$this->view->page_error[] = $modeldata['email']." Already exist!";
 			} 
 			if($this->validated()){
-		# Statement to execute before adding record
-		async function beforeAdd(postdata){
-#please make sure you have configure the mail settings
-    try{
-        let mail = require ('../helpers/Mailer.php');
-        let mailtitle = "Update from course";
-        let mailbody = `there is a new video- ${postdata.name} - in the course`;
-        let recipient = "huberpetergyorgy@gmail.com"
-        let mailResult = await mailer.sendMail(recipient, mailtitle, mailbody);
-        if(mailResult.messageId){
-            console.log("Email Sent");
-        }
-        else{
-            console.log(mailResult.error);
-        }
-}
-		# End of before add statement
 				$rec_id = $this->rec_id = $db->insert($tablename, $modeldata);
 				if($rec_id){
 					$this->set_flash_msg("Sikeres létrehozás!", "success");
