@@ -91,10 +91,6 @@
 let isFormSubmitted = false;
 
 function sendForm() {
-  if (isFormSubmitted) {
-    alert('Az űrlapot már elküldték!');
-    return false;
-  }
 
   const elements = document.querySelectorAll('.app-form-control');
   let hasErrors = false; // Flag to check if there are errors

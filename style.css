@@ -121,7 +121,7 @@ a {
   font-weight: 700;
   width: 900px;
   height: 32px;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 5px 15px;
   border: none;
 }
@@ -135,14 +135,14 @@ ul li a i {
 }
    
 .custom-search button{
-  background-color: #0074D9;
+  background-color: var(--blue);
   color: #fff;
   line-height: 2em;
   padding: 5px 15px;
   margin-right: 16px;
   font-size: 12px;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
 }
 

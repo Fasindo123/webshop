@@ -26,7 +26,7 @@ $conn->close();
 
     <div class="collapse navbar-collapse custom-search" id="navbarSupportedContent">
       <form class="d-flex justify-content-center" role="search" style="width: 60%; margin: 0 auto;">
-        <input class="form-control me-2 custom-search-input" type="search" placeholder="Keresés..." aria-label="Search" style="border-radius: 15px; font-weight: 600;">
+        <input class="form-control me-2 custom-search-input" type="search" placeholder="Keresés..." aria-label="Search" style="border-radius: 5px; font-weight: 600;">
         <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
 <!-- Peti search még dolgozom rajta! Nagyon kezdetleges:
