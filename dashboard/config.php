@@ -73,15 +73,15 @@ define("META_VIEWPORT", "width=device-width, initial-scale=1.0");
 define("PAGE_CHARSET", "UTF-8");
 
 // Email Configuration Default Settings
-define("USE_SMTP",false);
-define("SMTP_USERNAME", "");
-define("SMTP_PASSWORD", "");
-define("SMTP_HOST", "");
-define("SMTP_PORT", "");
+define("USE_SMTP",true);
+define("SMTP_USERNAME", "contact.ttrendstore@gmail.com");
+define("SMTP_PASSWORD", "TechTrendStore2023");
+define("SMTP_HOST", "smtp.gmail.com");
+define("SMTP_PORT", "587");
 
 //Default Email Sender Details. Please set this even if you are not using SMTP
-define("DEFAULT_EMAIL", "");
-define("DEFAULT_EMAIL_ACCOUNT_NAME", "");
+define("DEFAULT_EMAIL", "contact.ttrendstore@gmail.com");
+define("DEFAULT_EMAIL_ACCOUNT_NAME", "TechTrendStore");
 
 // Database Configuration Settings
 define("DB_HOST", "localhost");
