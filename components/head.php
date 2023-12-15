@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" type="image/x-icon" href="imgs/t_white.png">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/t_black.png">
     <title>TechTrendStore</title>
 
     <link rel="stylesheet" href="bootstrap.min.css">
