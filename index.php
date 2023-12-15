@@ -26,7 +26,7 @@ $conn->close();
         <?php
         if ($items->num_rows > 0) {
             while ($item = $items->fetch_assoc()) {
-                echo '<div class="product-card col-12 col-md-4 mx-auto">
+                echo '<div class="product-card col-12 col-md-4 mx-auto" id="'.$item['id'].'">
                             <img src="imgs/amd.jpg" class="img-fluid" alt="' . $item['name'] . '" title="' . $item['name'] . '">
                             <h2>' . $item['name'] . '</h2>
                             <h4>Ár: ' . $item['price'] . ' Ft</h4>
