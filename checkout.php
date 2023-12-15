@@ -55,7 +55,7 @@
             <label for="mastercard"><svg class="icon">
                 <use xlink:href="#icon-mastercard" />
                 </svg>Master Card</label>
-            <input id="mastercard" name="payment-method" type="radio" />
+
             </div>
         </div>
         </fieldset>
