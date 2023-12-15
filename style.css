@@ -449,6 +449,11 @@ textarea {
   font-weight: 300;
 }
 
+.product-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
 .productBtn {
   font-size: 1.5em;
   margin-right: 15px;
@@ -473,6 +478,10 @@ textarea {
   transition: transform 0.5s ease-in-out;
 }
 
+.slider img {
+  width: 100%;
+}
+
 .slide {
   min-width: 100%;
 }
@@ -491,12 +500,12 @@ textarea {
 .thumbnail-container {
   display: flex;
   justify-content: space-between;
-  max-width: 400px; /* Ezt az értéket állítsd be a főképének szélességére */
+  max-width: 400px;
   margin-top: 10px;
 }
 
 .thumbnail {
-  max-width: 60px; /* A maximális szélességet állítsd be, amit megfelelőnek találsz */
+  max-width: 60px;
   height: auto;
   cursor: pointer;
 }

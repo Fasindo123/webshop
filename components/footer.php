@@ -33,8 +33,8 @@
                 </ul> <br>
             <h4><i class="fa-solid fa-credit-card"></i> Fizetési módok</h4>
             <img src="imgs/paypal.png" alt="PayPal" title="PayPal">
-            <img src="imgs/visa.png" alt="">
-            <img src="imgs/mastercard.png" alt="">
+            <img src="imgs/visa.png" alt="Visa" title="Visa">
+            <img src="imgs/mastercard.png" alt="MasterCard" title="MasterCard">
         
         </div>
         <div class="footer-col">
