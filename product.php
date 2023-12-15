@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
 <body>
       <?php require_once('components/header.php'); ?>
 
-      <div class="container product">
+      <div class="container product mx-auto">
     <div class="row">
       <div class="col-sm-4">
         <div class="slider-container">
@@ -51,44 +51,48 @@ if (isset($_GET['id'])) {
           <img class="thumbnail" src="imgs/amd.jpg" alt="Thumbnail 5" onclick="showSlide(4)">
         </div>
 
-<script>
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
+  <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
 
-    function showSlide(index) {
-      if (index < 0) {
-        currentIndex = totalSlides - 1;
-      } else if (index >= totalSlides) {
-        currentIndex = 0;
-      } else {
-        currentIndex = index;
+      function showSlide(index) {
+        if (index < 0) {
+          currentIndex = totalSlides - 1;
+        } else if (index >= totalSlides) {
+          currentIndex = 0;
+        } else {
+          currentIndex = index;
+        }
+
+        const transformValue = -currentIndex * 100 + '%';
+        document.querySelector('.slider').style.transform = 'translateX(' + transformValue + ')';
       }
 
-      const transformValue = -currentIndex * 100 + '%';
-      document.querySelector('.slider').style.transform = 'translateX(' + transformValue + ')';
-    }
+      function nextSlide() {
+        showSlide(currentIndex + 1);
+      }
 
-    function nextSlide() {
-      showSlide(currentIndex + 1);
-    }
-
-    // Automatic sliding
-    setInterval(() => {
-      nextSlide();
-    }, 4000);
-</script>
-
-    </div>
+      // Automatic sliding
+      setInterval(() => {
+        nextSlide();
+      }, 4000);
+  </script>
+</div>
 
     <div class="col-sm-8">
       <h1 class="text-center"><?php echo $selected_item['name'] ?></h1>
       <h2>Termékleírás</h2>
-      <p class="description"><?php echo $selected_item['description'] ?></p>
-      <h2>Ár: <?php echo $selected_item['price'] ?> Ft</h2>
-      <h2>Elérhető: <?php echo $selected_item['stock'] ?> DB</h2>
-      <button class="productBtn"><a href=""><i class="fa-solid fa-heart-circle-plus"></i></a></button>
-      <button class="productBtn"><a href=""><i class="fa-solid fa-cart-plus"></i></a></button>
+        <p class="description"><?php echo $selected_item['description'] ?></p>
+
+        <div class="product-bottom">
+          <h2 style="color: red"><?php echo $selected_item['price'] ?> Ft</h2>
+          <h2><?php echo $selected_item['stock'] ?> DB</h2>
+          <div style="float: right;">
+            <button class="productBtn"><a href=""><i class="fa-solid fa-heart-circle-plus"></i></a></button>
+            <button class="productBtn"><a href=""><i class="fa-solid fa-cart-plus"></i></a></button>
+          </div>
+        </div>
     </div>
   </div>
 </div>
