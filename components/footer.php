@@ -4,11 +4,15 @@
         <div class="footer-col">
             <h4><i class="fa-solid fa-folder-tree"></i> Kategóriák</h4>
             <ul>
-                <li><a href="#">ASD1</a></li>
-                <li><a href="#">ASD2</a></li>
-                <li><a href="#">ASD3</a></li>
-                <li><a href="#">ASD4</a></li>
-                <li><a href="#">ASD5</a></li>
+            <?php 
+                if ($categories->num_rows > 0) {
+                    foreach($categories as $row) {
+                        echo '<li><a href="#" id="'.$row['id'].'">'.$row['label'].'</a></li>';
+                    }
+                } else {
+                    echo "Nincsenek kategóriák!";
+                }
+            ?>
             </ul>
         </div>
         <div class="footer-col">
