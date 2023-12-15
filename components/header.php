@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 $sql = "SELECT * FROM categories";
-$result = $conn->query($sql);
+$categories = $conn->query($sql);
 
 $conn->close();
 ?>
@@ -26,7 +26,7 @@ $conn->close();
 
     <div class="collapse navbar-collapse custom-search" id="navbarSupportedContent">
       <form class="d-flex justify-content-center" role="search" style="width: 60%; margin: 0 auto;">
-        <input class="form-control me-2 custom-search-input" type="search" placeholder="Keresés..." aria-label="Search" style="border-radius: 15px; font-weight: 600;">
+        <input class="form-control me-2 custom-search-input" type="search" placeholder="Keresés..." aria-label="Search" style="border-radius: 5px; font-weight: 600;">
         <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
 <!-- Peti search még dolgozom rajta! Nagyon kezdetleges:
@@ -62,8 +62,8 @@ $conn->close();
   <nav class="category">
     <ul>
       <?php 
-        if ($result->num_rows > 0) {
-          while($row = $result->fetch_assoc()) {
+        if ($categories->num_rows > 0) {
+          while($row = $categories->fetch_assoc()) {
             echo '<li><a href="#" id="'.$row['id'].'">'.$row['label'].'</a></li>';
           }
         } else {
