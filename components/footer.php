@@ -21,7 +21,7 @@
                     <li><a href="contact.php"><i class="fa-solid fa-envelopes-bulk"></i> Kapcsolat</a></li>
                     <li><i class="fa-solid fa-location-dot"></i> 7400, Kaposvár Szent Imre u. 2.</li>
                     <li><i class="fa-solid fa-phone"></i> (+36) 30 123 4567</li>
-                    <li><i class="fa-solid fa-envelope"></i> techtrendstore@gmail.com</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact.ttrendstore@gmail.com</li>
                     <li><i class="fa-solid fa-clock"></i> Hétfő - Péntek 8:00 - 16:00</li>
                 </ul>
         </div>

@@ -1,15 +1,23 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'Exception.php';
+require 'PHPMailer.php';
+require 'SMTP.php';
+
 class Mailer
 {
-	protected $smtp_username = SMTP_USERNAME;
-	protected $smtp_password = SMTP_PASSWORD;
-	protected $smtp_host = SMTP_HOST;
-	protected $smtp_port = SMTP_PORT;
-	protected $smtp_secure = 'ssl';  // can be ssl or tls
+	protected $smtp_username = 'contact.ttrendstore@gmail.com';
+	protected $smtp_password = 'TechTrendStore2023';
+	protected $smtp_host = 'smtp.gmail.com';
+	protected $smtp_port = '587';
+	protected $smtp_secure = 'tls';  // can be ssl or tls
 
 
-	protected $sender_email = DEFAULT_EMAIL;
-	protected $sender_name = DEFAULT_EMAIL_ACCOUNT_NAME;
+	protected $sender_email = 'contact.ttrendstore@gmail.com';
+	protected $sender_name = 'TechTrendStore Contact';
 
 
 	public function __construct()
