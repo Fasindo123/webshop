@@ -946,3 +946,8 @@ tfoot {
   background-color: #fff;
   
 }
+
+.description {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
