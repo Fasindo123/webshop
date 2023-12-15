@@ -22,10 +22,10 @@ if (isset($_POST['Submit'])) {
     $subject = 'ad';
     $msg = 'asdaads';
     $result = $mail->send_mail($recepient_emails, $subject, $msg);
-    if ($result) {
+    if ($result === true) {
         echo 'E-mail sikeresen elküldve!';
     } else {
-        echo 'Hiba: '.$result->ErrorInfo;
+        echo 'Hiba: ' . $result;
     }
 }
 ?>

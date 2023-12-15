@@ -24,7 +24,7 @@
 			Html ::  page_css('blueimp-gallery.css');
 		?>
 				<?php 
-			Html ::  page_css('bootstrap-theme-boostrap-material-design.css');
+			Html ::  page_css('bootstrap-theme-material.min.css');
 			Html ::  page_css('custom-style.css');
 		?>
 		<?php
