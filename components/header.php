@@ -24,7 +24,7 @@ $conn->close();
       <i class="fa-solid fa-bars" style="color: #fff;"></i>
     </button>
 
-    <div class="collapse navbar-collapse custom-search" id="navbarSupportedContent id="search"">
+    <div class="collapse navbar-collapse custom-search" id="navbarSupportedContent search">
       <form class="d-flex justify-content-center pt-3 pt-lg-0 w-100 mx-lg-5" role="search" style="margin: 0;" method="get" action="search.php">
         <input class="form-control me-2 custom-search-input" name="s" id="search-text" type="search" placeholder="Keresés..." aria-label="Search" style="border-radius: 5px; font-weight: 600;">
         <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
