@@ -717,10 +717,10 @@ tfoot {
   background: #fff;
   border-radius: 5px;
   box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  margin: 40px 10px;
-  max-width: 250px;
+  padding: 15px;
+  margin: 30px 10px;
   display: inline-block;
+  max-width: 300px;
 }
 
 .product-card img {
@@ -750,26 +750,6 @@ tfoot {
   margin-right: 10px;
   color: var(--blue);
   font-size: 1.5em;
-}
-
-.product-card {
-  margin-bottom: 20px;
-}
-
-.product-details {
-  text-align: center; /* Alapértelmezett elrendezés a nagy kijelzőn */
-}
-
-/* Stílus a kis kijelzőkhöz */
-@media (max-width: 767px) {
-  .product-card {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .product-details {
-    text-align: left; /* Szövegek és ikonok jobbra kerülnek */
-  }
 }
 
 /* ------------------------ */

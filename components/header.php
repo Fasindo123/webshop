@@ -25,7 +25,7 @@ $conn->close();
     </button>
 
     <div class="collapse navbar-collapse custom-search" id="navbarSupportedContent">
-      <form class="d-flex justify-content-center pt-3 pt-lg-0" role="search" style="margin: 0 auto;">
+      <form class="d-flex justify-content-center pt-3 pt-lg-0 w-100 mx-lg-5" role="search" style="margin: 0;">
         <input class="form-control me-2 custom-search-input" type="search" placeholder="Keresés..." aria-label="Search" style="border-radius: 5px; font-weight: 600;">
         <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
@@ -44,7 +44,7 @@ $conn->close();
 		</div> -->
 
 
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-3 pt-lg-0 flex-row justify-content-center align-items-center gap-4 gap-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-3 pt-lg-0 flex-row justify-content-center align-items-center gap-4 gap-lg-3">
         <li class="nav-item">
           <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
         </li>
