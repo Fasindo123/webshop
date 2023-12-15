@@ -26,7 +26,7 @@ $conn->close();
         <?php 
           if ($items->num_rows > 0) {
             while ($item = $items->fetch_assoc()) {
-              echo '<div class="product-card col-sm-3">
+              echo '<div class="product-card col-sm-3" id="'.$item['id'].'" onclick="selectProduct(this);">
                         <img src="imgs/amd.jpg" alt="'.$item['name'].'" title="'.$item['name'].'">
                         <h2>'.$item['name'].'</h2>
                         <h4>Ár: '.$item['price'].' Ft</h4>
@@ -44,4 +44,9 @@ $conn->close();
       <?php require_once("components/footer.php"); ?>
 
   </body>
+  <script>
+    function selectProduct(item){
+      alert(item.getAttribute('id'))
+    }
+  </script>
 </html>
