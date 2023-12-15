@@ -66,9 +66,6 @@
     </div>
   </div>
 </div>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
       <?php require_once("components/footer.php"); ?>
   </body>
 </html>
