@@ -202,6 +202,13 @@ ul{
 	width: 100px;
 }
 
+.footer-col img {
+  margin-right: 10px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
@@ -727,6 +734,11 @@ tfoot {
   .product-card {
     max-width: 200px;
   }
+}
+
+.product-card a {
+  text-decoration: none;
+  color: #000;
 }
 
 .product-card img {
