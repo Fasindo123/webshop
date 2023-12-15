@@ -723,6 +723,12 @@ tfoot {
   max-width: 300px;
 }
 
+@media screen and (max-width: 600px) {
+  .product-card {
+    max-width: 200px;
+  }
+}
+
 .product-card img {
   width: 100%;
 }
