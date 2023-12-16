@@ -35,7 +35,7 @@
             </div>
 
             <div>
-              <button type="button" class="kuldes" id="Submit" name="Submit" onclick="sendForm()">Küldés <i class="fa-solid fa-paper-plane"></i></button>
+              <button type="submit" class="kuldes" id="Submit" name="Submit" onclick="sendForm()">Küldés <i class="fa-solid fa-paper-plane"></i></button>
             </div>
           </div>
         </div>

@@ -32,7 +32,7 @@ if (isset($_GET['id'])) {
 
       <div class="container product mx-auto">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-12 col-sm-12 col-md-5 col-lg-4">
         <div class="slider-container">
           <div class="slider">
             <div class="slide"><img src="imgs/amd.jpg" alt="Image 1"></div>
@@ -80,7 +80,7 @@ if (isset($_GET['id'])) {
   </script>
 </div>
 
-    <div class="col-sm-8">
+    <div class="col-12 col-sm-12 col-md-7 col-lg-8">
       <h1 class="text-center"><?php echo $selected_item['name'] ?></h1>
       <h2>Termékleírás</h2>
         <p class="description"><?php echo $selected_item['description'] ?></p>
