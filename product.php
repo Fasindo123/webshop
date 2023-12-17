@@ -1,5 +1,7 @@
 <?php 
-if (isset($_GET['id'])) {
+if (!isset($_GET['id']) || !$_GET['id']) {
+  header("Location: index.php");
+} else {
   $servername = "localhost";
   $username = "root";
   $password = "";
