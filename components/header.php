@@ -40,9 +40,13 @@ $conn->close();
         <li class="nav-item">
           <a class="nav-link" href="contact.php"><i class="fa-solid fa-envelope"></i></a>
         </li>
-        <li class="nav-item">
+        <div class="dropdown" style="float:right;">
           <a class="nav-link" href="dashboard/account"><i class="fa-solid fa-user"></i></a>
-        </li>
+            <div class="dropdown-content">
+              <li><a href="#">asd</a></li>
+              <li><a href="#">asd</a></li>
+            </div>
+        </div>
       </ul>
     </div>
   </div>

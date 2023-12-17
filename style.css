@@ -154,6 +154,45 @@ ul li a i {
   margin-right: 20px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a i {
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  width: 100px;
+  box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  color: black;
+  text-align: left;
+  font-weight: 700;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* ------------------------- */
 /* ----- Custom Footer ----- */
 /* ------------------------- */
