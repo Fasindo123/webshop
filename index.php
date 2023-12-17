@@ -30,7 +30,7 @@ $conn->close();
                 if (!$item['cover_img']) { $item['cover_img'] = "imgs/empty-photo.jpg"; } else { $item['cover_img'] = "dashboard/".$item['cover_img']; }
                 echo '<div class="product-card col-6 col-sm-6 col-md-6 col-lg-4" id="'.$item['id'].'">
                       <a href="product.php?id='.$item['id'].'">
-                        <img src="'.$item['cover_img'].'" class="img-fluid" alt="Kép: ' . $item['name'] . '" title="' . $item['name'] . '">
+                        <img src="'.$item['cover_img'].'" class="img-fluid" alt="' . $item['cover_img'] . '" title="' . $item['name'] . '">
                         <h2>' . $item['name'] . '</h2>
                         <h4>Ár: ' . $item['price'] . ' Ft</h4>
                       </a>

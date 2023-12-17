@@ -1,27 +1,36 @@
 <?php 
 if (isset($_GET['id'])) {
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "webshop";
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "webshop";
 
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+  }
+
+  $sql = "SELECT * FROM items WHERE id=" . $_GET['id'] . " LIMIT 1";
+  $result = $conn->query($sql);
+
+  if ($result) {
+    $selected_item = $result->fetch_assoc();
+  } else {
+    echo "Error: " . $conn->error;
+  }
+
+  $conn->close();
+
+  if (!$selected_item['images']) { 
+    $selected_item['images'] = array("imgs/empty-photo.jpg", "imgs/empty-photo.jpg", "imgs/empty-photo.jpg", "imgs/empty-photo.jpg", "imgs/empty-photo.jpg");
+  } else { 
+    $selected_item['images'] = explode(",", $selected_item['images']);
+    for ($i=0; $i<count($selected_item['images']); $i++) {
+      $selected_item['images'][$i] = "dashboard/".$selected_item['images'][$i];
     }
-
-    $sql = "SELECT * FROM items WHERE id=" . $_GET['id'] . " LIMIT 1";
-    $result = $conn->query($sql);
-
-    if ($result) {
-        $selected_item = $result->fetch_assoc();
-    } else {
-        echo "Error: " . $conn->error;
-    }
-
-    $conn->close();
+  }
 }
 ?>
 <!DOCTYPE html>
@@ -35,20 +44,20 @@ if (isset($_GET['id'])) {
       <div class="col-12 col-sm-12 col-md-5 col-lg-4">
         <div class="slider-container">
           <div class="slider">
-            <div class="slide"><img src="imgs/amd.jpg" alt="Image 1"></div>
-            <div class="slide"><img src="imgs/amd.jpg" alt="Image 2"></div>
-            <div class="slide"><img src="imgs/amd.jpg" alt="Image 3"></div>
-            <div class="slide"><img src="imgs/amd.jpg" alt="Image 4"></div>
-            <div class="slide"><img src="imgs/amd.jpg" alt="Image 5"></div>
+            <?php 
+              foreach($selected_item['images'] as $image) {
+                echo '<div class="slide"><img src="'.$image.'" alt="'.$image.'" title = "Kép a termékről"></div>';
+              }
+            ?>
           </div>
         </div>
 
         <div class="thumbnail-container">
-          <img class="thumbnail" src="imgs/amd.jpg" alt="Thumbnail 1" onclick="showSlide(0)">
-          <img class="thumbnail" src="imgs/amd.jpg" alt="Thumbnail 2" onclick="showSlide(1)">
-          <img class="thumbnail" src="imgs/amd.jpg" alt="Thumbnail 3" onclick="showSlide(2)">
-          <img class="thumbnail" src="imgs/amd.jpg" alt="Thumbnail 4" onclick="showSlide(3)">
-          <img class="thumbnail" src="imgs/amd.jpg" alt="Thumbnail 5" onclick="showSlide(4)">
+          <?php 
+            for ($i=0; $i < count($selected_item['images']); $i++) {
+              echo '<img class="thumbnail" src="'.$selected_item['images'][$i].'" alt="'.$selected_item['images'][$i].'" title="Kép a termékről" onclick="showSlide('.$i.')">';
+            }
+          ?>
         </div>
 
   <script>
