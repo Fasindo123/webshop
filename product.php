@@ -93,10 +93,8 @@ if (!isset($_GET['id']) || !$_GET['id']) {
 
     <div class="col-12 col-sm-12 col-md-7 col-lg-8">
       <h1 class="text-center"><?php echo $selected_item['name'] ?></h1>
-      <h2>Termékleírás</h2>
-        <p class="description"><?php echo $selected_item['description'] ?></p>
-
-        <div class="product-bottom">
+      
+      <div class="product-bottom">
           <h2 style="color: red"><?php echo $selected_item['price'] ?> Ft</h2>
           <h2><?php echo $selected_item['stock'] ?> DB</h2>
           <div style="float: right;">
@@ -104,6 +102,9 @@ if (!isset($_GET['id']) || !$_GET['id']) {
             <button class="productBtn"><a href=""><i class="fa-solid fa-cart-plus"></i></a></button>
           </div>
         </div>
+
+      <h2>Termékleírás</h2>
+        <p class="description"><?php echo $selected_item['description'] ?></p>
     </div>
   </div>
 </div>
