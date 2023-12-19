@@ -1024,6 +1024,12 @@ tfoot {
   overflow-wrap: anywhere;
 }
 
+.favorite-link {
+  color: #000;
+  text-decoration: none;
+  display:contents ;
+}
+
 .mt {
   margin-top: 70px;
   text-align: center;

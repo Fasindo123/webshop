@@ -49,7 +49,7 @@
                                     if (!$item_data['cover_img']) { $item_data['cover_img'] = "imgs/empty-photo.jpg"; } else { $item_data['cover_img'] = "dashboard/".$item_data['cover_img']; }
                                     
                                     echo '
-                                    <a href=product.php?id='.$item_data["id"].'><li class="cart_item clearfix">
+                                    <a class="favorite-link" href=product.php?id='.$item_data["id"].'><li class="cart_item clearfix">
                                         <div class="cart_item_image col-2"><img src="'.$item_data["cover_img"].'" alt=""></div>
                                         <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
                                             <div class="cart_item_name col-1">
