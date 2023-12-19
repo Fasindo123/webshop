@@ -29,8 +29,8 @@
         <div class="footer-col">
             <h4><i class="fa-solid fa-scroll"></i> Ügyfélszolgálat</h4>
                 <ul>
-                    <li><a href="#">Gyik</a></li>
-                    <li><a href="#">Adatvédelmi Nyilatkozat</a></li>
+                    <li><a href="dashboard/info/help" target="_blank">Gyik</a></li>
+                    <li><a href="dashboard/info/privacy_policy" target="_blank">Adatvédelmi Nyilatkozat</a></li>
                 </ul> <br>
             <h4><i class="fa-solid fa-credit-card"></i> Fizetési módok</h4>
             <img src="imgs/paypal.png" alt="PayPal" title="PayPal">
