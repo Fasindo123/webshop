@@ -11,6 +11,7 @@
 		    <li>Dolgozó: Pintér Levente</li>
 		    <li>Dolgozó: Kovács Gergő</li>
 		</ul>
+		<p>2023 októberében alakultunk meg. Azóta számos munka van már mögöttünk.</p>
 		<p>A Döntsétek el csapat eredeti nevünk volt, ami úgy alakult ki, hogy nem tudtuk eldönteni, mi legyen a csapatnév.</p>
 		<p>Az új nevet a weboldal készítésekor Pintér Levente "chatgpt" ötlete alapján választottuk.</p>
 		<p>Pár szó a csapat tagokról:</p>
@@ -29,7 +30,7 @@
 		<?php 
 			if(DEVELOPMENT_MODE){ 
 		?>
-			<small class="text-muted">To edit this file, browse to :- <i>app/view/partials/info/about.php</i></small>
+			<!-- <small class="text-muted">To edit this file, browse to :- <i>app/view/partials/info/about.php</i></small> -->
 		<?php 
 			} 
 		?>
