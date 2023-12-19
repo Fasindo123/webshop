@@ -56,7 +56,7 @@
                             <div>
                                 <h5 class="text-grey">'.$item_data['price'].' Ft</h5>
                             </div>
-                            <div class="d-flex align-items-center"><i class="fa-solid fa-trash text-danger"></i></i></div>
+                            <div class="d-flex align-items-center"><a href="deleteProductFromList.php?list=cart&item='.$item_data["id"].'"><i class="fa-solid fa-trash text-danger"></i></i></a></div>
                         </div>';
                     }
                 ?>
