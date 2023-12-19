@@ -12,8 +12,8 @@
 		    <li>Dolgozó: Kovács Gergő</li>
 		</ul>
 		<p>2023 októberében alakultunk meg. Azóta számos munka van már mögöttünk.</p>
-		<p>A Döntsétek el csapat eredeti nevünk volt, ami úgy alakult ki, hogy nem tudtuk eldönteni, mi legyen a csapatnév.</p>
-		<p>Az új nevet a weboldal készítésekor Pintér Levente "chatgpt" ötlete alapján választottuk.</p>
+		<p>A Döntsétek el csapat eredeti nevünk volt, ami úgy alakult ki, hogy nem tudtuk eldönteni, mi legyen a csapatnév, egyik csapattárs oda mondja a másiknak "döntsétek el ti".</p>
+		<p>Az új nevet a weboldal készítésekor Pintér Levente "chatgpt" ötlete alapján választottuk ki.</p>
 		<p>Pár szó a csapat tagokról:</p>
 		<ul>
 		    <li>Szita Máté:</li>
@@ -25,7 +25,7 @@
 		    <li>Pintér Levente:</li>
 		        <p>A színek mestere. Szereti az Iphone-t. Fifa/FC focis játékokkal idegeli ki mindig magát.</p>
 		    <li>Kovács Gergő:</li>
-		        <p>Az internet felelős. Akinek fuvarra lenne szüksége bizalommal keresse. Kezd Iphone fan lenni drága Pintér megfertőzte vele.</p>
+		        <p>Az internet felelős. Akinek fuvarra lenne szüksége bizalommal keresse.</p>
 		</ul>
 		<?php 
 			if(DEVELOPMENT_MODE){ 
