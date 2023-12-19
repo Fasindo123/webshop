@@ -6,7 +6,7 @@
   <?php require_once('components/header.php'); ?>
 
   <form action="sendContact.php" method="post">
-    <div class="screen-body container">
+    <div class="screen-body container custom-container">
       <div class="screen-body-item left">
         <div class="app-title">
           <span><i class="fa-solid fa-envelopes-bulk"></i> Kapcsolatfelvétel</span>

@@ -21,7 +21,7 @@ $conn->close();
 <?php require_once('components/head.php'); ?>
 <body>
       <?php require_once('components/header.php'); ?>
-      <div class="container" id ="termekek">
+      <div class="container custom-container" id ="termekek">
       <div class="row">
       <?php 
         if ($items->num_rows > 0) {
