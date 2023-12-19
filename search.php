@@ -49,7 +49,7 @@ $search_results = searchAllPages($search_query);
         foreach ($search_results as $result) {
             echo '<div class="product-card col-6 col-sm-6 col-md-6 col-lg-4" id="'.$result['id'].'">
                     <a href="product.php?id='.$result['id'].'">
-                    <img src="'.$result['cover_img'].' imgs/empty-photo.jpg" class="img-fluid" alt="' . $result['cover_img'] . '" title="' . $result['name'] . '">
+                    <img src="'.($result['cover_img'] ? 'dashboard/'.$result['cover_img'] : 'imgs/empty-photo.jpg').'" class="img-fluid" alt="' . $result['cover_img'] . '" title="' . $result['name'] . '">
                     <h2>' . $result['name'] . '</h2>
                     </a>
 
