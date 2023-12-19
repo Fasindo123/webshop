@@ -87,7 +87,7 @@ if (!isset($_GET['id']) || !$_GET['id']) {
           // Automatic sliding
           setInterval(() => {
             nextSlide();
-          }, 4000);
+          }, 5000);
       </script>
     </div>
 
