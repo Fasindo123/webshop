@@ -1009,3 +1009,8 @@ tfoot {
   overflow-wrap: break-word;
   hyphens: auto;
 }
+
+.favorite {
+  width: 90%;
+  overflow-wrap: anywhere;
+}

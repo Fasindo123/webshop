@@ -58,7 +58,7 @@
                                             </div>
                                             <div class="cart_item_name cart_info_col">
                                                 <div class="cart_item_title">Leírás</div>
-                                                <div class="cart_item_text"><p>'.$item_data["description"].'</p></div>
+                                                <div class="cart_item_text"><p class="favorite">'.$item_data["description"].'</p></div>
                                             </div>
                                             <div class="cart_item_price cart_info_col">
                                                 <div class="cart_item_title">Ár:</div>
