@@ -62,8 +62,12 @@
                     if ($result->num_rows > 0) {
                         echo '<div class="d-flex flex-row align-items-center mt-3 p-2"><button class="btn buy btn-block btn-lg ml-2 pay-button" type="button"><i class="fa-solid fa-basket-shopping"></i> Tovább a fizetéshez</button></div>';
                     } else {
-                        echo ("<h1>Üres a kosarad!</h1>");
-                        echo ("<h2><a href='index.php'>Vissza a főoldalra...</a></h2>");
+                        echo ('
+                        <div class="mt">
+                        <h1 class="mt">Üres a kosarad!</h1>
+                        
+                        <h2 class="mt"><a href="index.php"><i class="fa-solid fa-angles-left"></i> Vissza a főoldalra...</a></h2>
+                        </div>');
                     }
                 ?>
             </div>

@@ -164,7 +164,7 @@ ul li a i {
   right: 0;
   background-color: #f9f9f9;
   border-radius: 5px;
-  width: 100px;
+  width: auto;
   box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -1022,4 +1022,24 @@ tfoot {
 .favorite {
   width: 100%;
   overflow-wrap: anywhere;
+}
+
+.mt {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.mt a {
+  color: #000;
+  text-decoration: none;
+}
+
+.mt h1 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.mt h2 {
+  font-size: 1.5em;
+  font-weight: 600;
 }
