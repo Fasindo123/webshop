@@ -5,7 +5,7 @@
     <?php
     require_once('components/header.php');
 
-    if (isset($_SESSION['webshopuser_data']) || isset($_SESSION['webshopuser_data']['id'])) {
+    if (isset($_SESSION['webshopuser_data']) && isset($_SESSION['webshopuser_data']['id'])) {
         if (isset($_GET['list']) && isset($_GET['item']) && $_GET['list'] && $_GET['item'] ) {
             $servername = "localhost";
             $username = "root";
