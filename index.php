@@ -21,7 +21,6 @@ $conn->close();
 <?php require_once('components/head.php'); ?>
 <body>
       <?php require_once('components/header.php'); ?>
-      <?php var_dump($_SESSION['webshopuser_data']); ?>
       <div class="container" id ="termekek">
       <div class="row">
       <?php 
