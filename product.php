@@ -98,8 +98,8 @@ if (!isset($_GET['id']) || !$_GET['id']) {
           <h2 style="color: red"><?php echo $selected_item['price'] ?> Ft</h2>
           <h2><?php echo $selected_item['stock'] ?> DB</h2>
           <div style="float: right;">
-            <button class="productBtn"><a href=""><i class="fa-solid fa-heart-circle-plus"></i></a></button>
-            <button class="productBtn"><a href=""><i class="fa-solid fa-cart-plus"></i></a></button>
+            <button class="productBtn"><a href="addProductToList.php?list=favorite&item=<?php echo '$selected_item["id"]'; ?>"><i class="fa-solid fa-heart-circle-plus"></i></a></button>
+            <button class="productBtn"><a href="addProductToList.php?list=cart&item=<?php echo '$selected_item["id"]'; ?>"><i class="fa-solid fa-cart-plus"></i></a></button>
           </div>
         </div>
 
