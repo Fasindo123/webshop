@@ -72,6 +72,17 @@
                                         </div>
                                     </li></a>';
                                 }
+
+                                if ($favorites->num_rows > 0) {
+                                    echo '<div class="d-flex flex-row align-items-center mt-3 p-2"><button class="btn buy btn-block btn-lg ml-2 pay-button" type="button"><i class="fa-solid fa-cart-plus"></i> Kosárba rakás</button></div>';
+                                } else {
+                                    echo ('
+                                    <div class="mt">
+                                    <h1 class="mt">Nincs egy kedvenced se! <i class="fa-regular fa-face-frown"></i></h1>
+                                    
+                                    <h2 class="mt"><a href="index.php"><i class="fa-solid fa-angles-left"></i> Vissza a főoldalra...</a></h2>
+                                    </div>');
+                                }
                             ?>
                         </ul>
                     </div>
