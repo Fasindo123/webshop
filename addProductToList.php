@@ -24,7 +24,7 @@
                 if ($checksql->num_rows > 0) {
                     $checksql = $checksql->fetch_assoc();
                     $x = $checksql['qty']+1;
-                    $conn->query("UPDATE `in_cart_items` SET `qty`=".$x." LIMIT 1");
+                    $conn->query("UPDATE `in_cart_items` SET `qty`=".$x." WHERE user_id = ".$_SESSION['webshopuser_data']['id']." AND item_id = ".$_GET['item']." LIMIT 1");
                 } else {
                     $conn->query("INSERT INTO `in_cart_items` (`user_id`, `item_id`, `qty`) VALUES (".$_SESSION['webshopuser_data']['id'].", ".$_GET['item'].", 1)");
                 }
