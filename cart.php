@@ -52,7 +52,7 @@
                             <div class="mr-1"><img class="rounded" src="'.$item_data['cover_img'].'" width="70"></div>
                             <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">'.$item_data['name'].'</span></div>
                             <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
-                                <h5 class="text-grey mt-1 mr-1 ml-1">'.$item['qty'].'</h5><i class="fa fa-plus text-success"></i></div>
+                                <h5 class="text-grey mt-1 mr-1 ml-1">'.$item['qty'].'</h5><a href="addProductToList.php?list=cart&item='.$item_data['id'].'"><i class="fa fa-plus text-success"></i></a></div>
                             <div>
                                 <h5 class="text-grey">'.$item_data['price'].' Ft</h5>
                             </div>
