@@ -21,15 +21,15 @@
     
             if ($_GET['list'] == 'cart') {
                 $sql = "INSERT INTO `in_cart_items` (`user_id`, `item_id`, `qty`) VALUES (".$_SESSION['webshopuser_data']['id'].", ".$_GET['item'].", 1)";
+                header('Location: cart.php');
             } else {
                 $sql = "INSERT INTO `favorites` (`user_id`, `item_id`) VALUES (".$_SESSION['webshopuser_data']['id'].", ".$_GET['item'].")";
+                header('Location: favourite.php');
             }
             
             $categories = $conn->query($sql);
     
             $conn->close();
-
-            header('Location: cart.php');
         }
     } else {
         header('Location: dashboard/account');
