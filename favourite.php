@@ -44,9 +44,7 @@
                                  </div>
                              </li>
                          </ul>
-                     </div> 
-                     
-                     <div class="cart_buttons"> <button type="button" class="button cart_button_clear"><i class="fa-solid fa-trash"></i> Törlés</button> <button type="button" class="button cart_button_checkout"><i class="fa-solid fa-cart-plus"></i> Hozzáadás a kosárhoz</button> </div>
+                     </div>
                  </div>
              </div>
          </div>
