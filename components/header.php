@@ -54,6 +54,7 @@ $conn->close();
 
   <nav class="category">
     <ul>
+      <li><a href="#" id="all">Összes</a></li>
       <?php 
         if ($categories->num_rows > 0) {
           while($row = $categories->fetch_assoc()) {

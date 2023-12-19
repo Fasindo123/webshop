@@ -38,8 +38,8 @@ $conn->close();
                         <h4>' . $item['price'] . ' Ft</h4>
 
                         <div class="button-container">
-                          <button><a href="#"><i class="fas fa-heart-circle-plus"></i></a></button>
-                          <button><a href="#"><i class="fas fa-cart-plus"></i></a></button>
+                          <button><a href="addProductToList.php?list="fav"&item="'.$item['id'].'"><i class="fas fa-heart-circle-plus"></i></a></button>
+                          <button><a href="addProductToList.php?list="cart"&item="'.$item['id'].'"><i class="fas fa-cart-plus"></i></a></button>
                         </div>
 
                       </div>
