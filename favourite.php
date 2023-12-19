@@ -49,7 +49,7 @@
                                     if (!$item_data['cover_img']) { $item_data['cover_img'] = "imgs/empty-photo.jpg"; } else { $item_data['cover_img'] = "dashboard/".$item_data['cover_img']; }
                                     
                                     echo '
-                                    <li class="cart_item clearfix">
+                                    <a href=product.php?id='.$item_data["id"].'><li class="cart_item clearfix">
                                         <div class="cart_item_image col-2"><img src="'.$item_data["cover_img"].'" alt=""></div>
                                         <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
                                             <div class="cart_item_name col-1">
@@ -66,11 +66,11 @@
                                             </div>
 
                                             <div class="cart_item_price col-1">
-                                                <div class="cart_item_text"><i class="fa-solid fa-trash text-danger"></i>
+                                                <div class="cart_item_text"><a href="deleteProductFromList.php?list=favorite&item='.$item_data["id"].'"><i class="fa-solid fa-trash text-danger"></i></a>
                                             </div>
 
                                         </div>
-                                    </li>';
+                                    </li></a>';
                                 }
                             ?>
                         </ul>
