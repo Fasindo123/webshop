@@ -41,7 +41,7 @@ if (!isset($_GET['id']) || !$_GET['id']) {
 <body>
       <?php require_once('components/header.php'); ?>
 
-      <div class="container product mx-auto">
+  <div class="container product mx-auto">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-5 col-lg-4">
         <div class="slider-container">
@@ -57,39 +57,39 @@ if (!isset($_GET['id']) || !$_GET['id']) {
         <div class="thumbnail-container">
           <?php 
             for ($i=0; $i < count($selected_item['images']); $i++) {
-              echo '<img class="thumbnail" src="'.$selected_item['images'][$i].'" alt="'.$selected_item['images'][$i].'" title="Kép a termékről" onclick="showSlide('.$i.')">';
+              echo '<img class="thumbnail img-fluid" src="'.$selected_item['images'][$i].'" alt="'.$selected_item['images'][$i].'" title="Kép a termékről" onclick="showSlide('.$i.')">';
             }
           ?>
         </div>
 
-  <script>
-      let currentIndex = 0;
-      const slides = document.querySelectorAll('.slide');
-      const totalSlides = slides.length;
+      <script>
+          let currentIndex = 0;
+          const slides = document.querySelectorAll('.slide');
+          const totalSlides = slides.length;
 
-      function showSlide(index) {
-        if (index < 0) {
-          currentIndex = totalSlides - 1;
-        } else if (index >= totalSlides) {
-          currentIndex = 0;
-        } else {
-          currentIndex = index;
-        }
+          function showSlide(index) {
+            if (index < 0) {
+              currentIndex = totalSlides - 1;
+            } else if (index >= totalSlides) {
+              currentIndex = 0;
+            } else {
+              currentIndex = index;
+            }
 
-        const transformValue = -currentIndex * 100 + '%';
-        document.querySelector('.slider').style.transform = 'translateX(' + transformValue + ')';
-      }
+            const transformValue = -currentIndex * 100 + '%';
+            document.querySelector('.slider').style.transform = 'translateX(' + transformValue + ')';
+          }
 
-      function nextSlide() {
-        showSlide(currentIndex + 1);
-      }
+          function nextSlide() {
+            showSlide(currentIndex + 1);
+          }
 
-      // Automatic sliding
-      setInterval(() => {
-        nextSlide();
-      }, 4000);
-  </script>
-</div>
+          // Automatic sliding
+          setInterval(() => {
+            nextSlide();
+          }, 4000);
+      </script>
+    </div>
 
     <div class="col-12 col-sm-12 col-md-7 col-lg-8">
       <h1 class="text-center"><?php echo $selected_item['name'] ?></h1>

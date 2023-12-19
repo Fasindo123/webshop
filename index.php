@@ -32,11 +32,18 @@ $conn->close();
                       <a href="product.php?id='.$item['id'].'">
                         <img src="'.$item['cover_img'].'" class="img-fluid" alt="' . $item['cover_img'] . '" title="' . $item['name'] . '">
                         <h2>' . $item['name'] . '</h2>
-                        <h4>Ár: ' . $item['price'] . ' Ft</h4>
                       </a>
-                        <button><a href="#"><i class="fas fa-heart-circle-plus"></i></a></button>
-                        <button><a href="#"><i class="fas fa-cart-plus"></i></a></button>
-                      </div>';
+
+                      <div class="product-card-bottom">
+                        <h4>' . $item['price'] . ' Ft</h4>
+
+                        <div class="button-container">
+                          <button><a href="#"><i class="fas fa-heart-circle-plus"></i></a></button>
+                          <button><a href="#"><i class="fas fa-cart-plus"></i></a></button>
+                        </div>
+
+                      </div>
+                    </div>';
             }
         } else {
             echo "Nincsenek termékek!";
