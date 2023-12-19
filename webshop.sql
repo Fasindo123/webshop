@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 18, 2023 at 08:09 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 7.3.27
+-- Gép: 127.0.0.1
+-- Létrehozás ideje: 2023. Dec 19. 14:05
+-- Kiszolgáló verziója: 10.4.28-MariaDB
+-- PHP verzió: 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,44 +18,52 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `webshop`
+-- Adatbázis: `webshop`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Tábla szerkezet ehhez a táblához `categories`
 --
 
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
   `label` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `categories`
+-- A tábla adatainak kiíratása `categories`
 --
 
 INSERT INTO `categories` (`id`, `label`) VALUES
-(1, 'Teszt'),
-(2, 'Igen');
+(1, 'PS5'),
+(2, 'Telefon');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `favorites`
+-- Tábla szerkezet ehhez a táblához `favorites`
 --
 
 CREATE TABLE `favorites` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `item_id` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- A tábla adatainak kiíratása `favorites`
+--
+
+INSERT INTO `favorites` (`id`, `user_id`, `item_id`) VALUES
+(3, 1, '7'),
+(4, 1, '8');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `in_cart_items`
+-- Tábla szerkezet ehhez a táblához `in_cart_items`
 --
 
 CREATE TABLE `in_cart_items` (
@@ -63,19 +71,20 @@ CREATE TABLE `in_cart_items` (
   `user_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
   `qty` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `in_cart_items`
+-- A tábla adatainak kiíratása `in_cart_items`
 --
 
 INSERT INTO `in_cart_items` (`id`, `user_id`, `item_id`, `qty`) VALUES
-(1, 1, 1, 2);
+(7, 1, 7, 1),
+(8, 1, 8, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `items`
+-- Tábla szerkezet ehhez a táblához `items`
 --
 
 CREATE TABLE `items` (
@@ -87,23 +96,22 @@ CREATE TABLE `items` (
   `cover_img` varchar(255) NOT NULL,
   `images` varchar(255) NOT NULL,
   `category_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `items`
+-- A tábla adatainak kiíratása `items`
 --
 
 INSERT INTO `items` (`id`, `name`, `description`, `price`, `stock`, `cover_img`, `images`, `category_id`) VALUES
-(1, 'asd', 'asd', 2, '2', '', '', 0),
-(4, 'asd', 'asd', 2, '5', '', '', 0),
-(5, 'asd', 'asd', 123, '123', '', '', 1),
-(6, 'asd', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 123, '13', '', '', 1),
-(7, 'Sali fasza', 'adsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkkicsinekiéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhlokéadsgkhfgjkhrlotdkéhlkéfhloké', 123, '50', '', 'uploads/photos/fc62b1ywer9ztn_.jpg,uploads/photos/7r1_i82kqhgxtu6.JPG,uploads/photos/pk64o7awlxid_n0.JPG', 1);
+(5, 'Playstation 5', 'SONY PlayStation 5', 224999, '5', 'uploads/photos/x27vu5_bmrhygjl.png', 'uploads/photos/u2hldfbg5oa0ny9.png', 1),
+(6, 'Xioami13', 'XIAOMI 13 8/256 GB DualSIM Fekete Kártyafüggetlen Okostelefon\r\n', 339999, '150', 'uploads/photos/5uwhonkc_af3s8m.png', 'uploads/photos/a2efgb0ct9zq8ol.png', 1),
+(7, 'Iphone 13', 'APPLE iPhone 13 Éjfekete 128 GB Kártyafüggetlen Okostelefon\r\nAz ujjadat sem kell mozdítanod a nagyszer? fotókért\r\n', 279999, '13', 'uploads/photos/w47pjugvxhbnq3m.png', 'uploads/photos/ibx4uo37t0s8fq5.png,uploads/photos/nbyue4k082dv71p.png,uploads/photos/9uq4jvopkd6n8c0.png,uploads/photos/5jvuqlagsexh3oi.png', 1),
+(8, 'Üres', 'Üres', 0, '0', '', '', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Tábla szerkezet ehhez a táblához `users`
 --
 
 CREATE TABLE `users` (
@@ -118,10 +126,10 @@ CREATE TABLE `users` (
   `password_expire_date` datetime DEFAULT '2024-03-12 00:00:00',
   `password_reset_key` varchar(255) DEFAULT NULL,
   `role` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `users`
+-- A tábla adatainak kiíratása `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `email`, `password`, `img`, `login_session_key`, `email_status`, `password_expire_date`, `password_reset_key`, `role`) VALUES
@@ -129,69 +137,69 @@ INSERT INTO `users` (`id`, `name`, `username`, `email`, `password`, `img`, `logi
 (2, 'Felhasználó', 'user123', 'mtszita24@gmail.com', '$2y$10$.LeQTy.g69MxUb18aRJRxe3N76yrt.wLyd6mMzpYgs2WY595dSPom', '', NULL, 'verified', '2024-03-12 00:00:00', NULL, 'user');
 
 --
--- Indexes for dumped tables
+-- Indexek a kiírt táblákhoz
 --
 
 --
--- Indexes for table `categories`
+-- A tábla indexei `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `favorites`
+-- A tábla indexei `favorites`
 --
 ALTER TABLE `favorites`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `in_cart_items`
+-- A tábla indexei `in_cart_items`
 --
 ALTER TABLE `in_cart_items`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `items`
+-- A tábla indexei `items`
 --
 ALTER TABLE `items`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- A tábla indexei `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- A kiírt táblák AUTO_INCREMENT értéke
 --
 
 --
--- AUTO_INCREMENT for table `categories`
+-- AUTO_INCREMENT a táblához `categories`
 --
 ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `favorites`
+-- AUTO_INCREMENT a táblához `favorites`
 --
 ALTER TABLE `favorites`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `in_cart_items`
+-- AUTO_INCREMENT a táblához `in_cart_items`
 --
 ALTER TABLE `in_cart_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `items`
+-- AUTO_INCREMENT a táblához `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT a táblához `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
