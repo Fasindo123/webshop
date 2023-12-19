@@ -50,20 +50,25 @@
                                     
                                     echo '
                                     <li class="cart_item clearfix">
-                                        <div class="cart_item_image"><img src="'.$item_data["cover_img"].'" alt=""></div>
+                                        <div class="cart_item_image col-2"><img src="'.$item_data["cover_img"].'" alt=""></div>
                                         <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
-                                            <div class="cart_item_name cart_info_col">
+                                            <div class="cart_item_name col-1">
                                                 <div class="cart_item_title">Termék neve</div>
                                                 <div class="cart_item_text">'.$item_data["name"].'</div>
                                             </div>
-                                            <div class="cart_item_name cart_info_col">
+                                            <div class="cart_item_name col-6">
                                                 <div class="cart_item_title">Leírás</div>
                                                 <div class="cart_item_text"><p class="favorite">'.$item_data["description"].'</p></div>
                                             </div>
-                                            <div class="cart_item_price cart_info_col">
+                                            <div class="cart_item_price col-2">
                                                 <div class="cart_item_title">Ár:</div>
                                                 <div class="cart_item_text">'.$item_data["price"].' Ft</div>
                                             </div>
+
+                                            <div class="cart_item_price col-1">
+                                                <div class="cart_item_text"><i class="fa-solid fa-trash text-danger"></i>
+                                            </div>
+
                                         </div>
                                     </li>';
                                 }
