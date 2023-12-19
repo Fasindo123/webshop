@@ -43,8 +43,19 @@ $conn->close();
         <div class="dropdown" style="float:right;">
           <a class="nav-link" href="dashboard/account"><i class="fa-solid fa-user"></i></a>
             <div class="dropdown-content">
-              <li><a href="#">asd</a></li>
-              <li><a href="#">asd</a></li>
+              <?php
+                if (isset($_SESSION['webshopuser_data']) && isset($_SESSION['webshopuser_data']['id'])) {
+                  echo ('<li><a href="dashboard/account">Saját fiók</a></li>');
+                  echo ('<li><a href="cart.php">Kosár</a></li>');
+                  echo ('<li><a href="favourite.php">Kedvencek</a></li>');
+                  if ($_SESSION["webshopuser_data"]["role"] == "admin") {
+                    echo ('<li><a href="dashboard">Dashboard</a></li>');
+                  }
+                  echo ('<li><a href="dashboard/index/logout">Kijelentkezés</a></li>');
+                } else {
+                  echo ('<li><a href="dashboard/account">Bejelentkezés</a></li>');
+                }
+              ?>
             </div>
         </div>
       </ul>
