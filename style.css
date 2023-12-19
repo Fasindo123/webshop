@@ -137,6 +137,13 @@ ul li a i {
   color: var(--blue);
 }
 
+.search-txt {
+  font-size: 1.5em;
+  margin-top: 150px;
+  text-align: center;
+  font-weight: 600;
+}
+
 .icons a {
   margin-right: 20px;
 }
@@ -754,7 +761,7 @@ tfoot {
 
 @media screen and (max-width: 600px) {
   .product-card {
-    max-width: 200px;
+    max-width: 150px;
   }
 }
 
@@ -809,7 +816,6 @@ tfoot {
 /* ------------------------ */
 /* ----- Favourite ----- */
 /* ------------------------ */
-
 .button {
   display: inline-block;
   background: #0e8ce4;
