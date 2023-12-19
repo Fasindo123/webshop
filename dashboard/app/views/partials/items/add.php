@@ -83,12 +83,12 @@ $redirect_to = $this->redirect_to;
                                             <div class="form-group ">
                                                 <div class="row">
                                                     <div class="col-sm-4">
-                                                        <label class="control-label" for="images">Images <span class="text-danger">*</span></label>
+                                                        <label class="control-label" for="images">Images </label>
                                                     </div>
                                                     <div class="col-sm-8">
                                                         <div class="">
-                                                            <div class="dropzone required" input="#ctrl-images" fieldname="images"    data-multiple="true" dropmsg="Válassz képeket vagy húzz ide párat!"    btntext="Browse" extensions=".jpg,.png,.gif,.jpeg" filesize="1" maximum="5">
-                                                                <input name="images" id="ctrl-images" required="" class="dropzone-input form-control" value="<?php  echo $this->set_field_value('images',""); ?>" type="text"  />
+                                                            <div class="dropzone " input="#ctrl-images" fieldname="images"    data-multiple="true" dropmsg="Válassz képeket vagy húzz ide párat!"    btntext="Browse" extensions=".jpg,.png,.gif,.jpeg" filesize="1" maximum="5">
+                                                                <input name="images" id="ctrl-images" class="dropzone-input form-control" value="<?php  echo $this->set_field_value('images',""); ?>" type="text"  />
                                                                     <!--<div class="invalid-feedback animated bounceIn text-center">Please a choose file</div>-->
                                                                     <div class="dz-file-limit animated bounceIn text-center text-danger"></div>
                                                                 </div>
@@ -99,56 +99,72 @@ $redirect_to = $this->redirect_to;
                                                 <div class="form-group ">
                                                     <div class="row">
                                                         <div class="col-sm-4">
-                                                            <label class="control-label" for="category_id">Kategória <span class="text-danger">*</span></label>
+                                                            <label class="control-label" for="cover_img">Borítókép </label>
                                                         </div>
                                                         <div class="col-sm-8">
                                                             <div class="">
-                                                                <select required=""  id="ctrl-category_id" name="category_id"  placeholder="Válassz kategóriát!"    class="custom-select" >
-                                                                    <option value="">Válassz kategóriát!</option>
-                                                                    <?php 
-                                                                    $category_id_options = $comp_model -> items_category_id_option_list();
-                                                                    if(!empty($category_id_options)){
-                                                                    foreach($category_id_options as $option){
-                                                                    $value = (!empty($option['value']) ? $option['value'] : null);
-                                                                    $label = (!empty($option['label']) ? $option['label'] : $value);
-                                                                    $selected = $this->set_field_selected('category_id',$value, "");
-                                                                    ?>
-                                                                    <option <?php echo $selected; ?> value="<?php echo $value; ?>">
-                                                                        <?php echo $label; ?>
-                                                                    </option>
-                                                                    <?php
-                                                                    }
-                                                                    }
-                                                                    ?>
-                                                                </select>
+                                                                <div class="dropzone " input="#ctrl-cover_img" fieldname="cover_img"    data-multiple="false" dropmsg="Válassz fájlt vagy húzd ide!"    btntext="Browse" extensions=".jpg,.png,.gif,.jpeg" filesize="1" maximum="1">
+                                                                    <input name="cover_img" id="ctrl-cover_img" class="dropzone-input form-control" value="<?php  echo $this->set_field_value('cover_img',""); ?>" type="text"  />
+                                                                        <!--<div class="invalid-feedback animated bounceIn text-center">Please a choose file</div>-->
+                                                                        <div class="dz-file-limit animated bounceIn text-center text-danger"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label class="control-label" for="category_id">Kategória <span class="text-danger">*</span></label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <div class="">
+                                                                    <select required=""  id="ctrl-category_id" name="category_id"  placeholder="Válassz kategóriát!"    class="custom-select" >
+                                                                        <option value="">Válassz kategóriát!</option>
+                                                                        <?php 
+                                                                        $category_id_options = $comp_model -> items_category_id_option_list();
+                                                                        if(!empty($category_id_options)){
+                                                                        foreach($category_id_options as $option){
+                                                                        $value = (!empty($option['value']) ? $option['value'] : null);
+                                                                        $label = (!empty($option['label']) ? $option['label'] : $value);
+                                                                        $selected = $this->set_field_selected('category_id',$value, "");
+                                                                        ?>
+                                                                        <option <?php echo $selected; ?> value="<?php echo $value; ?>">
+                                                                            <?php echo $label; ?>
+                                                                        </option>
+                                                                        <?php
+                                                                        }
+                                                                        }
+                                                                        ?>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label class="control-label" for="user_role_id">Enter the code <span class="text-danger">*</span></label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <div class="">
+                                                                    <?php Html::captcha_field(); ?>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <label class="control-label" for="user_role_id">Enter the code <span class="text-danger">*</span></label>
-                                                        </div>
-                                                        <div class="col-sm-8">
-                                                            <div class="">
-                                                                <?php Html::captcha_field(); ?>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <div class="form-group form-submit-btn-holder text-center mt-3">
+                                                    <div class="form-ajax-status"></div>
+                                                    <button class="btn btn-primary" type="submit">
+                                                        Hozzáad
+                                                        <i class="fa fa-send"></i>
+                                                    </button>
                                                 </div>
-                                            </div>
-                                            <div class="form-group form-submit-btn-holder text-center mt-3">
-                                                <div class="form-ajax-status"></div>
-                                                <button class="btn btn-primary" type="submit">
-                                                    Hozzáad
-                                                    <i class="fa fa-send"></i>
-                                                </button>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>

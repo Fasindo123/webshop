@@ -25,7 +25,8 @@ class ItemsController extends SecureController{
 			"items.stock", 
 			"items.images", 
 			"items.category_id", 
-			"categories.label AS categories_label");
+			"categories.label AS categories_label", 
+			"items.cover_img");
 		$pagination = $this->get_pagination(MAX_RECORD_COUNT); // get current pagination e.g array(page_number, page_limit)
 		//search table record
 		if(!empty($request->search)){
@@ -37,10 +38,11 @@ class ItemsController extends SecureController{
 				items.price LIKE ? OR 
 				items.stock LIKE ? OR 
 				items.images LIKE ? OR 
-				items.category_id LIKE ?
+				items.category_id LIKE ? OR 
+				items.cover_img LIKE ?
 			)";
 			$search_params = array(
-				"%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%"
+				"%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%"
 			);
 			//setting search conditions
 			$db->where($search_condition, $search_params);
@@ -99,7 +101,8 @@ class ItemsController extends SecureController{
 			"items.stock", 
 			"items.images", 
 			"items.category_id", 
-			"categories.label AS categories_label");
+			"categories.label AS categories_label", 
+			"items.cover_img");
 		if($value){
 			$db->where($rec_id, urldecode($value)); //select record based on field name
 		}
@@ -137,7 +140,7 @@ class ItemsController extends SecureController{
 			$tablename = $this->tablename;
 			$request = $this->request;
 			//fillable fields
-			$fields = $this->fields = array("name","description","price","stock","images","category_id");
+			$fields = $this->fields = array("name","description","price","stock","images","cover_img","category_id");
 			$postdata = $this->format_request_data($formdata);
 			$this->validate_captcha = true; //will check for captcha validation
 			$this->rules_array = array(
@@ -145,7 +148,6 @@ class ItemsController extends SecureController{
 				'description' => 'required',
 				'price' => 'required|numeric',
 				'stock' => 'required|numeric',
-				'images' => 'required',
 				'category_id' => 'required',
 			);
 			$this->sanitize_array = array(
@@ -154,6 +156,7 @@ class ItemsController extends SecureController{
 				'price' => 'sanitize_string',
 				'stock' => 'sanitize_string',
 				'images' => 'sanitize_string',
+				'cover_img' => 'sanitize_string',
 				'category_id' => 'sanitize_string',
 			);
 			$this->filter_vals = true; //set whether to remove empty fields
@@ -184,7 +187,7 @@ class ItemsController extends SecureController{
 		$this->rec_id = $rec_id;
 		$tablename = $this->tablename;
 		 //editable fields
-		$fields = $this->fields = array("id","name","description","price","stock","images","category_id");
+		$fields = $this->fields = array("id","name","description","price","stock","images","cover_img","category_id");
 		if($formdata){
 			$postdata = $this->format_request_data($formdata);
 			$this->validate_captcha = true; //will check for captcha validation
@@ -193,7 +196,6 @@ class ItemsController extends SecureController{
 				'description' => 'required',
 				'price' => 'required|numeric',
 				'stock' => 'required|numeric',
-				'images' => 'required',
 				'category_id' => 'required',
 			);
 			$this->sanitize_array = array(
@@ -202,12 +204,13 @@ class ItemsController extends SecureController{
 				'price' => 'sanitize_string',
 				'stock' => 'sanitize_string',
 				'images' => 'sanitize_string',
+				'cover_img' => 'sanitize_string',
 				'category_id' => 'sanitize_string',
 			);
 			$modeldata = $this->modeldata = $this->validate_form($postdata);
 			if($this->validated()){
 				//get files link to be deleted before updating records
-				$file_fields = array('images'); //list of file fields
+				$file_fields = array('images','cover_img'); //list of file fields
 				$db->where("items.id", $rec_id);;
 				$fields_file_paths = $db->getOne($tablename, $file_fields);
 				$db->where("items.id", $rec_id);;
@@ -265,7 +268,7 @@ class ItemsController extends SecureController{
 		//form multiple delete, split record id separated by comma into array
 		$arr_rec_id = array_map('trim', explode(",", $rec_id));
 		//list of file fields
-		$file_fields = array('images'); 
+		$file_fields = array('images','cover_img'); 
 		foreach( $arr_id as $rec_id ){
 			$db->where("items.id", $arr_rec_id, "in");;
 		}

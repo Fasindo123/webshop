@@ -45,15 +45,18 @@ $conn->close();
             <div class="dropdown-content">
               <?php
                 if (isset($_SESSION['webshopuser_data']) && isset($_SESSION['webshopuser_data']['id'])) {
-                  echo ('<li><a href="dashboard/account">Saját fiók</a></li>');
-                  echo ('<li><a href="cart.php">Kosár</a></li>');
-                  echo ('<li><a href="favourite.php">Kedvencek</a></li>');
+                  echo ('<li><a href="dashboard/account"><i class="fa-solid fa-user"></i> Saját fiók</a></li>');
+
+                  echo ('<li><a href="cart.php"><i class="fa-solid fa-cart-shopping"></i> Kosár</a></li>');
+
+                  echo ('<li><a href="favourite.php"><i class="fa-solid fa-heart"></i> Kedvencek</a></li>');
+
                   if ($_SESSION["webshopuser_data"]["role"] == "admin") {
-                    echo ('<li><a href="dashboard">Dashboard</a></li>');
+                    echo ('<li><a href="dashboard"><i class="fa-solid fa-pen-to-square"></i> Dashboard</a></li>');
                   }
-                  echo ('<li><a href="dashboard/index/logout">Kijelentkezés</a></li>');
+                  echo ('<li><a href="dashboard/index/logout"><i class="fa-solid fa-right-from-bracket"></i> Kijelentkezés</a></li>');
                 } else {
-                  echo ('<li><a href="dashboard/account">Bejelentkezés</a></li>');
+                  echo ('<li><a href="dashboard/account"><i class="fa-solid fa-right-to-bracket"></i> Bejelentkezés</a></li>');
                 }
               ?>
             </div>
@@ -76,7 +79,7 @@ $conn->close();
           echo "Nincsenek kategóriák!";
         }
       ?>
-      
+
     </ul>
   </nav>
 </div>
