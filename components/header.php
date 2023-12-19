@@ -54,7 +54,8 @@ $conn->close();
 
   <nav class="category">
     <ul>
-      <li><a href="#" cat_id="all">Összes</a></li>
+      <li><a href="index.php" cat_id="all">Összes</a></li>
+
       <?php 
         if ($categories->num_rows > 0) {
           while($row = $categories->fetch_assoc()) {
@@ -64,6 +65,7 @@ $conn->close();
           echo "Nincsenek kategóriák!";
         }
       ?>
+      
     </ul>
   </nav>
 </div>
