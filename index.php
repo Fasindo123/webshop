@@ -22,7 +22,7 @@ $conn->close();
 <body>
       <?php require_once('components/header.php'); ?>
       <div class="container custom-container" id ="termekek">
-      <div class="row">
+      <div class="row d-flex align-items-center justify-content-center">
       <?php 
         if ($items->num_rows > 0) {
             while ($item = $items->fetch_assoc()) {

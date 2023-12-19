@@ -527,6 +527,7 @@ textarea {
 
 .thumbnail {
   max-width: 20%;
+  margin: 1px 1px 0 0;
   height: auto;
   cursor: pointer;
 }
@@ -760,7 +761,19 @@ tfoot {
   max-width: 300px;
 }
 
+@media screen and (max-width: 766px) {
+  .product-card {
+    max-width: 250px;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .product-card {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 460px) {
   .product-card {
     max-width: 150px;
   }
