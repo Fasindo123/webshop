@@ -28,6 +28,8 @@
             $categories = $conn->query($sql);
     
             $conn->close();
+
+            header('Location: cart.php');
         }
     } else {
         header('Location: dashboard/account');
