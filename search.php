@@ -37,25 +37,38 @@ $search_results = searchAllPages($search_query);
     <?php require_once('components/head.php'); ?>
 <body>
   <?php require_once('components/header.php'); ?>
-  <br><br><br><br><br><br><br><br><br><br>
 
-<p style="margin: 30px">Keresett szó: <?php echo $search_query; ?></p>
+<div class="search-txt">
+    <p>Keresett szó: <?php echo $search_query; ?></p>
+    <p>Találatok: <?php echo count($search_results); ?></p>
+</div>
 
-<p style="margin: 30px">Találatok: <?php echo count($search_results); ?></p>
+<div class="container" id ="termekek">
+      <div class="row">
+        <?php
+        foreach ($search_results as $result) {
+            echo '<div class="product-card col-6 col-sm-6 col-md-6 col-lg-4" id="'.$result['id'].'">
+                    <a href="product.php?id='.$result['id'].'">
+                    <img src="'.$result['cover_img'].' imgs/empty-photo.jpg" class="img-fluid" alt="' . $result['cover_img'] . '" title="' . $result['name'] . '">
+                    <h2>' . $result['name'] . '</h2>
+                    </a>
 
-<?php
-foreach ($search_results as $result) {
-    echo '<div class="product-card col-6 col-sm-6 col-md-6 col-lg-4" id="'.$result['id'].'">
-            <a href="product.php?id='.$result['id'].'">
-              <img src="'.$result['cover_img'].' imgs/empty-photo.jpg" class="img-fluid" alt="' . $result['cover_img'] . '" title="' . $result['name'] . '">
-              <h2>' . $result['name'] . '</h2>
-              <h4>Ár: ' . $result['price'] . ' Ft</h4>
-            </a>
-            <button><a href="#"><i class="fas fa-heart-circle-plus"></i></a></button>
-            <button><a href="#"><i class="fas fa-cart-plus"></i></a></button>
-          </div>';
-}
-?>
+                    <div class="product-card-bottom">
+                    <h4>' . $result['price'] . ' Ft</h4>
+
+                    <div class="button-container">
+                      <button><a href="#"><i class="fas fa-heart-circle-plus"></i></a></button>
+                      <button><a href="#"><i class="fas fa-cart-plus"></i></a></button>
+                    </div>
+
+                  </div>
+                </div>';
+        }
+        ?>
+      </div>
+</div>
+
+<?php require_once("components/footer.php"); ?>
 
 </body>
 </html>
