@@ -4,6 +4,7 @@
         <div class="footer-col">
             <h4><i class="fa-solid fa-folder-tree"></i> Kategóriák</h4>
             <ul>
+            <li><a href="#" id="all">Összes</a></li>
             <?php 
                 if ($categories->num_rows > 0) {
                     foreach($categories as $row) {
