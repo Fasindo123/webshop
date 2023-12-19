@@ -3,9 +3,11 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
+  --bg: #f1f6f9;
   --footer-bg: #394867;
   --navbar-bg: #394867;
   --category: #9ba4b5;
@@ -14,7 +16,6 @@
 
   /* Checkout */
   --color-background: #fae3ea;
-  --color-primary: #0074D9;
   --font-family-base: Poppin, sans-serif;
   --font-size-h1: 1.25rem;
   --font-size-h2: 1rem;
@@ -22,7 +23,7 @@
 
 html, body {
   height: 100%;
-  background: #f1f6f9;
+  background: var(--bg);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -461,7 +462,7 @@ textarea {
 }
 
 .product img {
-  width: 400px;
+  width: 100%;
 }
 
 .product h1 {
@@ -525,7 +526,7 @@ textarea {
 }
 
 .thumbnail {
-  max-width: 60px;
+  max-width: 20%;
   height: auto;
   cursor: pointer;
 }
@@ -641,7 +642,7 @@ input {
 }
 
 input[type="radio"] {
-  accent-color: var(--color-primary);
+  accent-color: var(--blue);
 }
 
 table {
@@ -669,7 +670,7 @@ tfoot {
 
 .button {
   align-items: center;
-  background-color: var(--color-primary);
+  background-color: var(--blue);
   border-radius: 999em;
   color: #fff;
   display: flex;
@@ -691,7 +692,7 @@ tfoot {
 
 .card {
   border-radius: 1em;
-  background-color: var(--color-primary);
+  background-color: var(--blue);
   color: #fff;
   padding: 1em;
 }
