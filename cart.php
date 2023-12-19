@@ -59,8 +59,13 @@
                             <div class="d-flex align-items-center"><a href="deleteProductFromList.php?list=cart&item='.$item_data["id"].'"><i class="fa-solid fa-trash text-danger"></i></i></a></div>
                         </div>';
                     }
+                    if ($result->num_rows > 0) {
+                        echo '<div class="d-flex flex-row align-items-center mt-3 p-2"><button class="btn buy btn-block btn-lg ml-2 pay-button" type="button"><i class="fa-solid fa-basket-shopping"></i> Tovább a fizetéshez</button></div>';
+                    } else {
+                        echo ("<h1>Üres a kosarad!</h1>");
+                        echo ("<h2><a href='index.php'>Vissza a főoldalra...</a></h2>");
+                    }
                 ?>
-                <div class="d-flex flex-row align-items-center mt-3 p-2"><button class="btn buy btn-block btn-lg ml-2 pay-button" type="button"><i class="fa-solid fa-basket-shopping"></i> Tovább a fizetéshez</button></div>
             </div>
         </div>
     </div>
