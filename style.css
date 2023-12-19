@@ -378,7 +378,7 @@ ul{
 
 textarea {
   max-height: 350px;
-  min-height: 50px;
+  min-height: 70px;
 }
 
 .app-form-control::placeholder {
@@ -526,7 +526,7 @@ textarea {
 }
 
 .thumbnail {
-  max-width: 20%;
+  max-width: calc(20% - .75px);
   margin: 1px 1px 0 0;
   height: auto;
   cursor: pointer;

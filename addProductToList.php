@@ -20,14 +20,21 @@
             }
     
             if ($_GET['list'] == 'cart') {
-                $sql = "INSERT INTO `in_cart_items` (`user_id`, `item_id`, `qty`) VALUES (".$_SESSION['webshopuser_data']['id'].", ".$_GET['item'].", 1)";
+                $checksql = $conn->query("SELECT qty FROM in_cart_items WHERE user_id = ".$_SESSION['webshopuser_data']['id']." AND item_id = ".$_GET['item']." LIMIT 1");
+                if ($checksql) {
+                    $checksql->fetch_assoc();
+                    $conn->query("UPDATE `in_cart_items` SET `qty`=".$checksql['qty']+1." LIMIT 1");
+                } else {
+                    $conn->query("INSERT INTO `in_cart_items` (`user_id`, `item_id`, `qty`) VALUES (".$_SESSION['webshopuser_data']['id'].", ".$_GET['item'].", 1)");
+                }
                 header('Location: cart.php');
             } else {
-                $sql = "INSERT INTO `favorites` (`user_id`, `item_id`) VALUES (".$_SESSION['webshopuser_data']['id'].", ".$_GET['item'].")";
+                $checksql = $conn->query("SELECT id FROM favorites WHERE user_id = ".$_SESSION['webshopuser_data']['id']." AND item_id = ".$_GET['item']." LIMIT 1");
+                if (!$checksql) {
+                    $conn->query("INSERT INTO `favorites` (`user_id`, `item_id`) VALUES (".$_SESSION['webshopuser_data']['id'].", ".$_GET['item'].")");
+                }
                 header('Location: favourite.php');
             }
-            
-            $categories = $conn->query($sql);
     
             $conn->close();
         }
