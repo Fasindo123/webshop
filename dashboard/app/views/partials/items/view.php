@@ -84,6 +84,24 @@ $show_export_btn = $this->show_export_btn;
                                             </a>
                                         </td>
                                     </tr>
+                                    <tr  class="td-cover_img">
+                                        <th class="title"> Cover Img: </th>
+                                        <td class="value">
+                                            <span <?php if($can_edit){ ?> data-value="<?php echo $data['cover_img']; ?>" 
+                                                data-pk="<?php echo $data['id'] ?>" 
+                                                data-url="<?php print_link("items/editfield/" . urlencode($data['id'])); ?>" 
+                                                data-name="cover_img" 
+                                                data-title="Browse..." 
+                                                data-placement="left" 
+                                                data-toggle="click" 
+                                                data-type="text" 
+                                                data-mode="popover" 
+                                                data-showbuttons="left" 
+                                                class="is-editable" <?php } ?>>
+                                                <?php echo $data['cover_img']; ?> 
+                                            </span>
+                                        </td>
+                                    </tr>
                                 </tbody>
                                 <!-- Table Body End -->
                             </table>

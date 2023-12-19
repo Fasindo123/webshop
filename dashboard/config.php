@@ -20,7 +20,7 @@ $site_addr = rtrim($site_addr, "/\\") . "/";
 // Can Be Set Manually Like "http://localhost/mysite/".
 define("SITE_ADDR", $site_addr);
 
-define("APP_ID", "webshop");
+define("APP_ID", "5cc187899c065ba430204940bd35b8a9");
 
 // Application Default Color (Mostly Used By Mobile)
 define("META_THEME_COLOR", "#FFFFFF");

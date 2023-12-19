@@ -131,6 +131,7 @@ $show_pagination = $this->show_pagination;
                                                 <th  class="td-stock"> Készleten</th>
                                                 <th  class="td-images"> Képek</th>
                                                 <th  class="td-category_id"> Kategória</th>
+                                                <th  class="td-cover_img"> Cover Img</th>
                                                 <th class="td-btn"></th>
                                             </tr>
                                         </thead>
@@ -165,6 +166,7 @@ $show_pagination = $this->show_pagination;
                                                             <i class="fa fa-eye"></i> <?php echo $data['categories_label'] ?>
                                                         </a>
                                                     </td>
+                                                    <td class="td-cover_img"> <?php echo $data['cover_img']; ?></td>
                                                     <th class="td-btn">
                                                         <?php if($can_view){ ?>
                                                         <a class="btn btn-sm btn-success has-tooltip" title="View Record" href="<?php print_link("items/view/$rec_id"); ?>">

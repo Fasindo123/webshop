@@ -170,6 +170,17 @@ class BaseController{
 		);
 	
 
+		$this->file_upload_settings['cover_img'] = array(
+			"title" => "{{random}}",
+			"extensions" => ".jpg,.png,.gif,.jpeg",
+			"limit" => "1",
+			"filesize" => "1",
+			"returnfullpath" => false,
+			"filenameprefix" => "",
+			"uploadDir" => "uploads/photos/"
+		);
+	
+
 		$this->file_upload_settings['img'] = array(
 			"title" => "{{random}}",
 			"extensions" => ".jpg,.png,.gif,.jpeg",
