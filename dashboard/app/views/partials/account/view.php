@@ -66,22 +66,22 @@ $show_export_btn = $this->show_export_btn;
                                     <ul class="nav nav-pills flex-column text-left">
                                         <li class="nav-item">
                                             <a data-toggle="tab" href="#AccountPageView" class="nav-link active">
-                                                <i class="fa fa-user"></i> Account Detail
+                                                <i class="fa fa-user"></i> Fiók adatok
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a data-toggle="tab" href="#AccountPageEdit" class="nav-link">
-                                                <i class="fa fa-edit"></i> Edit Account
+                                                <i class="fa fa-edit"></i> Fiók szerkesztése
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a data-toggle="tab" href="#AccountPageChangeEmail" class="nav-link">
-                                                <i class="fa fa-envelope"></i> Change Email
+                                                <i class="fa fa-envelope"></i> Email változtatása
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a data-toggle="tab" href="#AccountPageChangePassword" class="nav-link">
-                                                <i class="fa fa-key"></i> Reset Password
+                                                <i class="fa fa-key"></i> Elfelejtett jelszó
                                             </a>
                                         </li>
                                     </ul>
