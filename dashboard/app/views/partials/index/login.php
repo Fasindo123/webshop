@@ -5,14 +5,14 @@
             <div class="my-4 p-3 bg-light">
                 
                 <div>
-                    <h4><i class="fa fa-key"></i> User Login</h4>
+                    <h4><i class="fa fa-key"></i>Bejelentkezés</h4>
                     <hr />
                     <?php 
                     $this :: display_page_errors(); 
                     ?>
                     <form name="loginForm" action="<?php print_link('index/login/?csrf_token=' . Csrf::$token); ?>" class="needs-validation form page-form" method="post">
                         <div class="input-group form-group">
-                            <input placeholder="Username Or Email" name="username"  required="required" class="form-control" type="text"  />
+                            <input placeholder="Felhasználónév vagy email" name="username"  required="required" class="form-control" type="text"  />
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="form-control-feedback fa fa-user"></i></span>
                             </div>
@@ -20,7 +20,7 @@
                         
                         <div class="input-group form-group">
                             
-                            <input  placeholder="Password" required="required" v-model="user.password" name="password" class="form-control " type="password" />
+                            <input  placeholder="Jelszó" required="required" v-model="user.password" name="password" class="form-control " type="password" />
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="form-control-feedback fa fa-key"></i></span>
                             </div>
@@ -30,12 +30,12 @@
                             <div class="col-6">
                                 <label class="">
                                     <input value="true" type="checkbox" name="rememberme" />
-                                    Remember Me
+                                    Jegyezz meg!
                                 </label>
                             </div>
                             
                             <div class="col-6">
-                                <a href="<?php print_link('passwordmanager') ?>" class="text-danger"> Reset Password?</a>
+                                <a href="<?php print_link('passwordmanager') ?>" class="text-danger"> Elfelejtetted jelszavad?</a>
                             </div>
                             
                         </div>
@@ -45,13 +45,13 @@
                                 <i class="load-indicator">
                                     <clip-loader :loading="loading" color="#fff" size="20px"></clip-loader> 
                                 </i>
-                                Login <i class="fa fa-key"></i>
+                                Bejelentkezés <i class="fa fa-key"></i>
                             </button>
                         </div>
                         <hr />
                         
                         <div class="text-center">
-                            Don't Have an Account? <a href="<?php print_link("index/register") ?>" class="btn btn-success">Register
+                            Nincs még fiókod? <a href="<?php print_link("index/register") ?>" class="btn btn-success">Regisztráció
                             <i class="fa fa-user"></i></a>
                         </div>
                         

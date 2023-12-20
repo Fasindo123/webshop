@@ -19,7 +19,7 @@
 
         $conn->close();
     } else {
-        header('Location: dashboard/account');
+        header('Location: dashboard');
     }
 ?>
 

@@ -8,7 +8,7 @@ define("ROOT", str_replace("\\", "/", dirname(__FILE__)) . "/");
 // return the application directory name.
 define("ROOT_DIR_NAME", basename(ROOT));
 
-define("SITE_NAME", "TechTrendStore - Dashboard");
+define("SITE_NAME", "TechTrendStore");
 
 
 // Get Site Address Dynamically
@@ -20,6 +20,7 @@ $site_addr = rtrim($site_addr, "/\\") . "/";
 // Can Be Set Manually Like "http://localhost/mysite/".
 define("SITE_ADDR", $site_addr);
 
+// AZ APP_ID LEGYEN "webshop", HOGY A USER DATA ELÉRHETŐ LEGYEN!!!
 define("APP_ID", "webshop");
 
 // Application Default Color (Mostly Used By Mobile)
@@ -59,7 +60,7 @@ define("UPLOAD_IMG_DIR", UPLOAD_DIR . "photos/");
 define("MAX_UPLOAD_FILESIZE", trim(ini_get("upload_max_filesize")));
 
 // First page to see after user login 
-define("HOME_PAGE", "Home");
+define("HOME_PAGE", "../index.php");
 define("DEFAULT_PAGE", "index"); //Default Controller Class
 define("DEFAULT_PAGE_ACTION", "index"); //Default Controller Action
 define("DEFAULT_LAYOUT", LAYOUTS_DIR . "main_layout.php");

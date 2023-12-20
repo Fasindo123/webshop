@@ -40,7 +40,7 @@
             $conn->close();
         }
     } else {
-        header('Location: dashboard/account');
+        header('Location: dashboard');
     }
 
     require_once("components/footer.php");

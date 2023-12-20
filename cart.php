@@ -20,7 +20,7 @@
 
             $conn->close();
         } else {
-            header('Location: dashboard/account');
+            header('Location: dashboard');
         }
     ?>
     <div class="container mt-5 mb-5">

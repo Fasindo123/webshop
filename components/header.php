@@ -56,7 +56,7 @@ $conn->close();
                   }
                   echo ('<li><a href="dashboard/index/logout"><i class="fa-solid fa-right-from-bracket"></i> Kijelentkezés</a></li>');
                 } else {
-                  echo ('<li><a href="dashboard/account"><i class="fa-solid fa-right-to-bracket"></i> Bejelentkezés</a></li>');
+                  echo ('<li><a href="dashboard"><i class="fa-solid fa-right-to-bracket"></i> Bejelentkezés</a></li>');
                 }
               ?>
             </div>

@@ -8,28 +8,28 @@
 		if($status==true){
 			if(!empty($_GET['resend'])){
 				?>
-				<h4 class="text-info bold animated bounce"><i class="fa fa-envelope"></i> Email verification has been resent</h4>
+				<h4 class="text-info bold animated bounce"><i class="fa fa-envelope"></i> Email jóváhagyás újraküldve!</h4>
 				<?php
 			}
 			else{
 				?>
-				<h4 class="text-info bold"><i class="fa fa-envelope"></i> Email verification link sent</h4>
+				<h4 class="text-info bold"><i class="fa fa-envelope"></i> Email jóváhagyás elküldve!</h4>
 				<?php
 			}
 		?>
-			<div class="text-muted">Please verify your email address by following the link in your mailbox</div>
+			<div class="text-muted">Kérjük hagyd jóvá emailcímed a levélben kapott linket követve!</div>
 			<hr />
 			<div>
-				<a href="<?php print_link("index/send_verify_email_link/$user_email?resend=true") ?>" class="btn btn-primary"><i class="fa fa-envelope"></i> Resend Email</a>
+				<a href="<?php print_link("index/send_verify_email_link/$user_email?resend=true") ?>" class="btn btn-primary"><i class="fa fa-envelope"></i> Email újraküldése</a>
 			</div>
 			<?php
 		}
 		else{
 			?>
-			<div><i class="fa fa-envelope"></i> Please verify your email address by following the link in your mailbox</div>
+			<div><i class="fa fa-envelope"></i> Kérjük hagyd jóvá emailcímed a levélben kapott linket követve!</div>
 			<hr />
 			<div>
-				<a href="<?php print_link("index/send_verify_email_link/$user_email?resend=true") ?>" class="btn btn-primary"><i class="fa fa-envelope"></i> Resend Email</a>
+				<a href="<?php print_link("index/send_verify_email_link/$user_email?resend=true") ?>" class="btn btn-primary"><i class="fa fa-envelope"></i> Email újraküldése</a>
 			</div>
 			<?php
 		}
@@ -42,10 +42,10 @@
 			<div class="bg-light p-4 border">
 				<div class="text-danger">
 					<h3>
-						<b>Disclaimer:</b> You are seeing this because you published under development mode.
-						<br />We understand that sending email in localhost might be problematic.
+						<b>Figyelmeztetés:</b> Ezt azért látod, mert a weboldal fejlesztői módban van publikálva!
+						<br />Az emailek küldése helyi webszerveren problémákkal járhat.
 					</h3>
-					<div class="text-muted">To edit the email template, browse to :- <i>app/view/partials/index/emailverify_template.html</i></div>
+					<div class="text-muted">Az email sablon módosításához:- <i>app/view/partials/index/emailverify_template.html</i></div>
 				</div>
 				<hr />
 				<?php  echo $mailbody; ?>

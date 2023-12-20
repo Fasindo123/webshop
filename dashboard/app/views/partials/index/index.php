@@ -9,7 +9,13 @@
                         <div class="">
                             <div class="fadeIn animated mb-4">
                                 <div class="text-capitalize">
-                                    <h2 class="text-capitalize">Welcome To <?php echo SITE_NAME ?></h2>
+                                    <h2 class="text-capitalize">Üdvözlünk <?php echo SITE_NAME ?> oldalán!</h2>
+                                    <br> <br>
+                                    <div style="border-left: 0.5rem solid red; padding: 1rem; border-radius:0.5rem; background-color:rgba(0,0,0,0.1); text-transform:none;">
+                                        <h3>Admin fiók bejelentkezési adatok:</h3>
+                                        <br>
+                                        <h4>Felhasználónév: admin <br> Jelszó: admin</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -19,7 +25,7 @@
                         
                         <div  class="bg-light p-3 animated fadeIn page-content">
                             <div>
-                                <h4><i class="fa fa-key"></i> User Login</h4>
+                                <h4><i class="fa fa-key"></i> Bejelentkezés</h4>
                                 <hr />
                                 <?php 
                                 $this :: display_page_errors(); 
@@ -32,7 +38,7 @@
                                         </div>
                                     </div>
                                     <div class="input-group form-group">
-                                        <input  placeholder="Password" required="required" v-model="user.password" name="password" class="form-control " type="password" />
+                                        <input  placeholder="Jelszó" required="required" v-model="user.password" name="password" class="form-control " type="password" />
                                         <div class="input-group-append">
                                             <span class="input-group-text"><i class="form-control-feedback fa fa-key"></i></span>
                                         </div>
@@ -41,11 +47,11 @@
                                         <div class="col-6">
                                             <label class="">
                                                 <input value="true" type="checkbox" name="rememberme" />
-                                                Remember Me
+                                                Jegyezz meg!
                                             </label>
                                         </div>
                                         <div class="col-6">
-                                            <a href="<?php print_link('passwordmanager') ?>" class="text-danger"> Reset Password?</a>
+                                            <a href="<?php print_link('passwordmanager') ?>" class="text-danger"> Elfelejtetted jelszavad?</a>
                                         </div>
                                     </div>
                                     <div class="form-group text-center">
@@ -53,12 +59,12 @@
                                             <i class="load-indicator">
                                                 <clip-loader :loading="loading" color="#fff" size="20px"></clip-loader> 
                                             </i>
-                                            Login <i class="fa fa-key"></i>
+                                            Bejelentkezés <i class="fa fa-key"></i>
                                         </button>
                                     </div>
                                     <hr />
                                     <div class="text-center">
-                                        Don't Have an Account? <a href="<?php print_link("index/register") ?>" class="btn btn-success">Register
+                                        Nincs még fiókod? <a href="<?php print_link("index/register") ?>" class="btn btn-success">Regisztráció
                                         <i class="fa fa-user"></i></a>
                                     </div>
                                 </form>
