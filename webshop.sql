@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2023. Dec 19. 19:39
+-- Létrehozás ideje: 2023. Dec 20. 08:06
 -- Kiszolgáló verziója: 10.4.27-MariaDB
 -- PHP verzió: 7.4.33
 
@@ -88,12 +88,12 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`id`, `name`, `description`, `price`, `stock`, `cover_img`, `images`, `category_id`) VALUES
-(1, 'Xioami Redmi Note 12', 'Az 5000mAh-s akkumulátor és a 33W-os gyorstöltés nyer? kombinációja\r\n', 69999, '200', 'uploads/photos/083uasdqgorpe_i.png', 'uploads/photos/bdrweo8ql0fv73i.png,uploads/photos/01sj2fozlwcv7r3.png,uploads/photos/0mgf1b68ptaurv3.png', 1),
-(2, 'Xioami 13', 'XIAOMI 13 8/256 GB DualSIM Fekete Kártyafüggetlen Okostelefon\r\n', 339999, '150', 'uploads/photos/5uwhonkc_af3s8m.png', 'uploads/photos/a2efgb0ct9zq8ol.png', 1),
+(1, 'Xiaomi Redmi Note 12', 'Az 5000mAh-s akkumulátor és a 33W-os gyorstöltés nyer? kombinációja\r\n', 69999, '200', 'uploads/photos/083uasdqgorpe_i.png', 'uploads/photos/bdrweo8ql0fv73i.png,uploads/photos/01sj2fozlwcv7r3.png,uploads/photos/0mgf1b68ptaurv3.png', 1),
+(2, 'Xiaomi 13', 'XIAOMI 13 8/256 GB DualSIM Fekete Kártyafüggetlen Okostelefon\r\n', 339999, '150', 'uploads/photos/5uwhonkc_af3s8m.png', 'uploads/photos/a2efgb0ct9zq8ol.png', 1),
 (3, 'Iphone 13', 'APPLE iPhone 13 Éjfekete 128 GB Kártyafüggetlen Okostelefon', 279999, '13', 'uploads/photos/w47pjugvxhbnq3m.png', 'uploads/photos/ibx4uo37t0s8fq5.png,uploads/photos/nbyue4k082dv71p.png,uploads/photos/9uq4jvopkd6n8c0.png,uploads/photos/5jvuqlagsexh3oi.png', 1),
-(4, 'Intel Core i9', 'Intel Core i9-11900KF 8-Core 3.5GHz LGA1200 Box Processzor\r\n', 109000, '3', 'uploads/photos/ohga13zwexuc8dl.png', 'uploads/photos/whyztmfgubrl9k2.png,uploads/photos/18po2tb5sxka3yq.png,uploads/photos/w1prsmcy6x8q9nh.png,uploads/photos/i7p2fk_sqazwrjc.png', 2),
-(5, 'Ryzen 7 5800X', 'AMD Ryzen 7 5800X 8-Core 3.8GHz AM4 Box without fan and heatsink Processzor\r\n', 79250, '46', 'uploads/photos/z46khsvig5xtyqu.png', 'uploads/photos/n9giqwdtko6scj3.png,uploads/photos/tc1myas7fzxkq5i.png,uploads/photos/h6cp9iy17nrubgk.png', 2),
-(6, 'Ryzen 9 5900X', 'AMD Ryzen 9 5900X 12-Core 3.7GHz AM4 Box without fan and heatsink Processzor\r\n', 116020, '38', 'uploads/photos/12ulytgk3fojsd0.png', 'uploads/photos/n7dmst_ul5hywb9.png,uploads/photos/v0d43b69c5nwlu_.png', 2),
+(4, 'Intel Core i9-11900KF', 'Intel Core i9-11900KF 8-Core 3.5GHz LGA1200 Box Processzor\r\n', 109000, '3', 'uploads/photos/ohga13zwexuc8dl.png', 'uploads/photos/whyztmfgubrl9k2.png,uploads/photos/18po2tb5sxka3yq.png,uploads/photos/w1prsmcy6x8q9nh.png,uploads/photos/i7p2fk_sqazwrjc.png', 2),
+(5, 'AMD Ryzen 7 5800X', 'AMD Ryzen 7 5800X 8-Core 3.8GHz AM4 Box without fan and heatsink Processzor\r\n', 79250, '46', 'uploads/photos/z46khsvig5xtyqu.png', 'uploads/photos/n9giqwdtko6scj3.png,uploads/photos/tc1myas7fzxkq5i.png,uploads/photos/h6cp9iy17nrubgk.png', 2),
+(6, 'AMD Ryzen 9 5900X', 'AMD Ryzen 9 5900X 12-Core 3.7GHz AM4 Box without fan and heatsink Processzor\r\n', 116020, '38', 'uploads/photos/12ulytgk3fojsd0.png', 'uploads/photos/n7dmst_ul5hywb9.png,uploads/photos/v0d43b69c5nwlu_.png', 2),
 (7, 'Playstation 5', 'SONY PlayStation 5', 224999, '5', 'uploads/photos/n745lbr3v9wapid.png', 'uploads/photos/rw_4a78epqoymux.png,uploads/photos/ny9s2c0i3gehq4j.png,uploads/photos/zqp3si5l4kwotm1.png', 3),
 (8, 'Xbox Series S', 'Xbox Series S Carbon Black 1TB', 139999, '25', 'uploads/photos/a725suyokbr34nl.png', 'uploads/photos/h0wd9qzsynt8obc.png,uploads/photos/amrzlbwo_k6c25y.png,uploads/photos/v6g_fb59rusimqh.png', 3),
 (9, 'Üres', 'Üres', 0, '0', '', '', 1);
@@ -180,7 +180,7 @@ ALTER TABLE `favorites`
 -- AUTO_INCREMENT a táblához `in_cart_items`
 --
 ALTER TABLE `in_cart_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT a táblához `items`
