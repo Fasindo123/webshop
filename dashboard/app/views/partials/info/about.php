@@ -5,11 +5,11 @@
 		<p>TechTrendStore</p>
 		<p>Csapat tagok rangsor szerint:</p>
 		<ul>
-		    <li>Vezető: Szita Máté Ferenc</li>
-		    <li>Al Vezető: Bodó Zoltán</li>
-		    <li>Dolgozó: Huber Péter György</li>
-		    <li>Dolgozó: Pintér Levente</li>
-		    <li>Dolgozó: Kovács Gergő</li>
+		    <li>Project Director: Szita Máté Ferenc</li>
+		    <li>Senior Project Manager: Bodó Zoltán</li>
+		    <li>Project Manager: Huber Péter György</li>
+		    <li>Project Team Member: Pintér Levente</li>
+		    <li>Project Sponsor: Kovács Gergő</li>
 		</ul>
 		<p>2023 októberében alakultunk meg. Azóta számos munka van már mögöttünk.</p>
 		<p>A Döntsétek el csapat eredeti nevünk volt, ami úgy alakult ki, hogy nem tudtuk eldönteni, mi legyen a csapatnév, egyik csapattárs oda mondja a másiknak "döntsétek el ti".</p>
